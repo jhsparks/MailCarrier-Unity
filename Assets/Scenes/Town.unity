@@ -32716,9 +32716,22 @@ PrefabInstance:
     m_TransformParent: {fileID: 1142407822}
     m_Modifications:
     - target: {fileID: 219483778523901326, guid: 8317a5d7022fed94f876553e189e6114, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: c1018c80976631340b7b65c688d8aa5e, type: 3}
+    - target: {fileID: 219483778523901326, guid: 8317a5d7022fed94f876553e189e6114, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f534a5a97eaac6f448ad53f65e362079, type: 2}
+    - target: {fileID: 219483778523901326, guid: 8317a5d7022fed94f876553e189e6114, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Arm_Lower.L'\n\tTransform 'Head'\n\tTransform
+        'Leg_Upper.R'\n\tTransform 'Toes.L'\n\tTransform 'Spine'\n\tTransform 'Arm_Upper.R'\n\tTransform
+        'Arm_Upper.L'\n\tTransform 'Arm_Lower.R'\n\tTransform 'Hand.R'\n\tTransform
+        'Hand.L'\n\tand more ...\n\tFrom animation clip 'Idle'"
+      objectReference: {fileID: 0}
     - target: {fileID: 4808108811627561585, guid: 8317a5d7022fed94f876553e189e6114, type: 3}
       propertyPath: m_Name
       value: Player
