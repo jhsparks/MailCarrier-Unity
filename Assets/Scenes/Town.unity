@@ -8869,9 +8869,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2670460c15f3d14e9998cf200d9cd52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ThirdPersonCamera
-  currentTarget: {fileID: 0}
+  currentTarget: {fileID: 1408736471}
   offset: {x: 0, y: 4, z: -7}
-  followSpeed: 8
+  followSpeed: 5
 --- !u!1001 &338299484
 PrefabInstance:
   m_ObjectHideFlags: 0
