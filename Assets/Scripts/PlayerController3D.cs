@@ -7,6 +7,7 @@ public class PlayerController3D : MonoBehaviour
     public Transform cameraTransform;
     public Animator animator;
     private CharacterController controller;
+    private float verticalVelocity;
 
     void Start()
     {
@@ -30,14 +31,24 @@ public class PlayerController3D : MonoBehaviour
             animator.SetFloat("Speed", input.magnitude);
         }
 
+        Vector3 moveDir = Vector3.zero;
         if (input.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(input.x, input.z) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
             float angle = Mathf.LerpAngle(transform.eulerAngles.y, targetAngle, turnSpeed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * moveSpeed * Time.deltaTime);
         }
+
+        if (controller.isGrounded && verticalVelocity < 0f)
+            verticalVelocity = -2f; // small downward force to keep grounded
+
+        verticalVelocity += Physics.gravity.y * Time.deltaTime;
+
+        Vector3 motion = moveDir.normalized * moveSpeed; // horizontal
+        motion.y = verticalVelocity;
+        controller.Move(motion * Time.deltaTime);
     }
 }

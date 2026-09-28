@@ -8869,6 +8869,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2670460c15f3d14e9998cf200d9cd52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ThirdPersonCamera
+  currentTarget: {fileID: 0}
+  offset: {x: 0, y: 4, z: -7}
+  followSpeed: 8
 --- !u!1001 &338299484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13877,6 +13880,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289c57cdcee899c4eaeba5233e3a9577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  driveSpeed: 14
+  turnSpeed: 70
+  isBeingDriven: 0
 --- !u!1001 &540428502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16592,6 +16598,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d3d3df4442f28d40915b437f98b5349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VehicleInteraction
+  playerCharacter: {fileID: 0}
+  targetVan: {fileID: 0}
+  exitPoint: {fileID: 0}
+  gameCamera: {fileID: 0}
+  interactKey: 101
 --- !u!1001 &694459899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32801,7 +32812,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &1408736474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32814,6 +32825,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5703185662e5f4aa78a87bd6c29540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController3D
+  moveSpeed: 6
+  turnSpeed: 12
+  cameraTransform: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &1411383694
 PrefabInstance:
   m_ObjectHideFlags: 0
