@@ -19971,7 +19971,7 @@ Transform:
   m_GameObject: {fileID: 687896564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.69999886, y: 0, z: 0.6000004}
+  m_LocalPosition: {x: 0.10000038, y: 0, z: 0.6000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19996,7 +19996,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.5, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &687896567
 MonoBehaviour:
@@ -20010,10 +20010,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d3d3df4442f28d40915b437f98b5349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VehicleInteraction
-  playerCharacter: {fileID: 0}
-  targetVan: {fileID: 0}
-  exitPoint: {fileID: 0}
-  gameCamera: {fileID: 0}
+  playerCharacter: {fileID: 1408736472}
+  targetVan: {fileID: 540006367}
+  exitPoint: {fileID: 1011470047}
+  gameCamera: {fileID: 337956620}
   interactKey: 101
 --- !u!1 &690020814
 GameObject:
@@ -29218,7 +29218,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.8999996, y: 0, z: 1.1000004}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 540006364}
@@ -39705,7 +39705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController3D
   moveSpeed: 6
-  turnSpeed: 12
+  turnSpeed: 6
   cameraTransform: {fileID: 0}
   animator: {fileID: 0}
 --- !u!1001 &1411383694
