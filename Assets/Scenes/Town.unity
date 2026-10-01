@@ -1313,6 +1313,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6472659045557726441, guid: 515b2dd7c5b86fe46a88baad877638e5, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6766945601205737822, guid: 515b2dd7c5b86fe46a88baad877638e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 128.62173
@@ -3205,6 +3209,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_UseGravity
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
@@ -5704,9 +5712,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7a8de941b69f54a86c61a395c26eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCPedestrianPath
+  sidewalkRoutes:
+  - {fileID: 2088672911}
+  - {fileID: 263566203}
+  - {fileID: 1363786498}
   walkSpeed: 3
   rotationSpeed: 6
-  reachDistance: 0.8
 --- !u!1001 &182530842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11748,6 +11759,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 530462615}
     m_Modifications:
+    - target: {fileID: -556755528254666769, guid: 2670ee43939cc5e4495f6616366acaeb, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2828425087289356490, guid: 2670ee43939cc5e4495f6616366acaeb, type: 3}
       propertyPath: m_Avatar
       value: 
@@ -16408,6 +16423,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1142407822}
     m_Modifications:
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Name
       value: Driveable Van
@@ -16464,9 +16519,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 540006366}
-    - targetCorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 540006367}
   m_SourcePrefab: {fileID: 100100000, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
 --- !u!4 &540006364 stripped
@@ -16479,27 +16531,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
   m_PrefabInstance: {fileID: 540006363}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &540006366
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540006365}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &540006367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18677,6 +18708,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 530462615}
     m_Modifications:
+    - target: {fileID: -3075061886483604496, guid: 8f2d72b8a186ccf458218ae1f88d275e, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5063714714737779777, guid: 8f2d72b8a186ccf458218ae1f88d275e, type: 3}
       propertyPath: m_Name
       value: Ped 5
@@ -20094,7 +20129,7 @@ Transform:
   m_GameObject: {fileID: 687896564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.10000038, y: 0, z: 0.6000004}
+  m_LocalPosition: {x: 0.10000038, y: 0.8, z: 0.6000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23130,9 +23165,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda669237fb77234db9bb157a462e4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCVehiclePath
-  moveSpeed: 8
+  routes:
+  - {fileID: 1570121795}
+  - {fileID: 1469090125}
+  - {fileID: 918263998}
+  speed: 8
   rotationSpeed: 5
-  reachDistance: 1
 --- !u!1001 &818050804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26459,6 +26497,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 41640371}
     m_Modifications:
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 124.2728
@@ -26532,9 +26574,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda669237fb77234db9bb157a462e4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCVehiclePath
-  moveSpeed: 8
+  routes:
+  - {fileID: 1570121795}
+  - {fileID: 1469090125}
+  - {fileID: 918263998}
+  speed: 8
   rotationSpeed: 5
-  reachDistance: 1
 --- !u!1001 &927108434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27507,9 +27552,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7a8de941b69f54a86c61a395c26eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCPedestrianPath
+  sidewalkRoutes:
+  - {fileID: 2088672911}
+  - {fileID: 263566203}
+  - {fileID: 1363786498}
   walkSpeed: 3
   rotationSpeed: 6
-  reachDistance: 0.8
 --- !u!1001 &959197048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33469,6 +33517,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 41640371}
     m_Modifications:
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
       propertyPath: m_Name
       value: car-3
@@ -34050,9 +34102,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda669237fb77234db9bb157a462e4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCVehiclePath
-  moveSpeed: 8
+  routes:
+  - {fileID: 1570121795}
+  - {fileID: 1469090125}
+  - {fileID: 918263998}
+  speed: 8
   rotationSpeed: 5
-  reachDistance: 1
 --- !u!1001 &1210093393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37653,6 +37708,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 530462615}
     m_Modifications:
+    - target: {fileID: -5904711811715219901, guid: 8317a5d7022fed94f876553e189e6114, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 219483778523901326, guid: 8317a5d7022fed94f876553e189e6114, type: 3}
       propertyPath: m_Avatar
       value: 
@@ -46254,63 +46313,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 493312, guid: 12e574493ffa82e478d1852f78156fd3, type: 3}
   m_PrefabInstance: {fileID: 1648025719}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1652825226
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1652825228}
-  - component: {fileID: 1652825227}
-  m_Layer: 0
-  m_Name: Pedestrian Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1652825227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652825226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801dfd8f233afdc4abaadd72d34751f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCSpawner
-  npcPrefabs:
-  - {fileID: 6519605648272185231, guid: 2670ee43939cc5e4495f6616366acaeb, type: 3}
-  - {fileID: 880714636728156243, guid: 704e6059def12974b93a2246d7e71e9f, type: 3}
-  - {fileID: 5063714714737779777, guid: 8f2d72b8a186ccf458218ae1f88d275e, type: 3}
-  - {fileID: 4808108811627561585, guid: 8317a5d7022fed94f876553e189e6114, type: 3}
-  - {fileID: 6242786811382514660, guid: 515b2dd7c5b86fe46a88baad877638e5, type: 3}
-  routeGroups:
-  - {fileID: 2088672911}
-  - {fileID: 263566203}
-  - {fileID: 1363786498}
-  maxActiveNPCs: 8
-  spawnInterval: 3
-  yOffset: 0.1
---- !u!4 &1652825228
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652825226}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.5138, y: 0.12771, z: 86.40388}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1654731626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46974,62 +46976,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 403548, guid: 05fb03652e92efb42bc379e428d37bb0, type: 3}
   m_PrefabInstance: {fileID: 1678488151}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1678826048
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1678826050}
-  - component: {fileID: 1678826049}
-  m_Layer: 0
-  m_Name: Vehicle Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1678826049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678826048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801dfd8f233afdc4abaadd72d34751f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCSpawner
-  npcPrefabs:
-  - {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
-  - {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
-  - {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
-  - {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
-  routeGroups:
-  - {fileID: 1570121795}
-  - {fileID: 1469090125}
-  - {fileID: 918263998}
-  maxActiveNPCs: 8
-  spawnInterval: 3
-  yOffset: 0.3
---- !u!4 &1678826050
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678826048}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.5138, y: 0.12771, z: 86.40388}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1678997246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53287,9 +53233,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7a8de941b69f54a86c61a395c26eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCPedestrianPath
+  sidewalkRoutes:
+  - {fileID: 2088672911}
+  - {fileID: 263566203}
+  - {fileID: 1363786498}
   walkSpeed: 3
   rotationSpeed: 6
-  reachDistance: 0.8
 --- !u!1001 &1935682819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55276,6 +55225,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2725745723238855599, guid: 704e6059def12974b93a2246d7e71e9f, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5369719732237335417, guid: 704e6059def12974b93a2246d7e71e9f, type: 3}
       propertyPath: m_Avatar
       value: 
@@ -55309,9 +55262,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7a8de941b69f54a86c61a395c26eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCPedestrianPath
+  sidewalkRoutes:
+  - {fileID: 2088672911}
+  - {fileID: 263566203}
+  - {fileID: 1363786498}
   walkSpeed: 3
   rotationSpeed: 6
-  reachDistance: 0.8
 --- !u!1001 &2015104497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55651,9 +55607,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7a8de941b69f54a86c61a395c26eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCPedestrianPath
+  sidewalkRoutes:
+  - {fileID: 2088672911}
+  - {fileID: 263566203}
+  - {fileID: 1363786498}
   walkSpeed: 3
   rotationSpeed: 6
-  reachDistance: 0.8
 --- !u!1 &2025537446
 GameObject:
   m_ObjectHideFlags: 0
@@ -56065,6 +56024,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 41640371}
     m_Modifications:
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
       propertyPath: m_Name
       value: car-5
@@ -56138,9 +56101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda669237fb77234db9bb157a462e4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCVehiclePath
-  moveSpeed: 8
+  routes:
+  - {fileID: 1570121795}
+  - {fileID: 1469090125}
+  - {fileID: 918263998}
+  speed: 8
   rotationSpeed: 5
-  reachDistance: 1
 --- !u!1001 &2047131395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59513,5 +59479,3 @@ SceneRoots:
   - {fileID: 1818177643}
   - {fileID: 1413953453}
   - {fileID: 8375031}
-  - {fileID: 1678826050}
-  - {fileID: 1652825228}
