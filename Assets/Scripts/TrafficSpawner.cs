@@ -21,6 +21,45 @@ public class TrafficSpawner : MonoBehaviour
 
     private readonly List<Vector3> spawnedPositions = new List<Vector3>();
 
+    void Awake()
+    {
+        // Fallbacks so vehicles always spawn even if a serialized reference
+        // was lost or not assigned in the Inspector.
+
+        if (routes == null || routes.Length == 0)
+        {
+            GameObject routesRoot = GameObject.Find("Routes");
+            if (routesRoot != null && routesRoot.transform.childCount > 0)
+            {
+                List<Transform> found = new List<Transform>();
+                foreach (Transform child in routesRoot.transform)
+                {
+                    if (child.childCount > 0) found.Add(child);
+                }
+                routes = found.ToArray();
+            }
+        }
+
+        if (vehiclePrefabs == null || vehiclePrefabs.Length == 0)
+        {
+            GameObject[] loaded = Resources.LoadAll<GameObject>("TrafficCars");
+            if (loaded != null && loaded.Length > 0)
+            {
+                vehiclePrefabs = loaded;
+            }
+        }
+
+        int waypointCount = 0;
+        if (routes != null)
+        {
+            foreach (Transform r in routes)
+            {
+                if (r != null) waypointCount += r.childCount;
+            }
+        }
+        Debug.Log($"[TrafficSpawner] Awake: routes={(routes == null ? 0 : routes.Length)} waypoints={waypointCount} prefabs={(vehiclePrefabs == null ? 0 : vehiclePrefabs.Length)}");
+    }
+
     void Start()
     {
         SpawnTraffic();
@@ -28,8 +67,16 @@ public class TrafficSpawner : MonoBehaviour
 
     void SpawnTraffic()
     {
-        if (vehiclePrefabs == null || vehiclePrefabs.Length == 0) return;
-        if (routes == null || routes.Length == 0) return;
+        if (vehiclePrefabs == null || vehiclePrefabs.Length == 0)
+        {
+            Debug.LogWarning("[TrafficSpawner] No vehicle prefabs assigned; no traffic spawned.");
+            return;
+        }
+        if (routes == null || routes.Length == 0)
+        {
+            Debug.LogWarning("[TrafficSpawner] No routes assigned; no traffic spawned.");
+            return;
+        }
 
         // Account for vehicles already placed in the scene so new spawns
         // don't land on top of them.
@@ -54,7 +101,9 @@ public class TrafficSpawner : MonoBehaviour
             if (!IsFarEnough(position)) continue;
 
             GameObject prefab = vehiclePrefabs[Random.Range(0, vehiclePrefabs.Length)];
-            GameObject vehicle = Instantiate(prefab, position, Quaternion.identity, transform);
+            // Parent under the scene root (not this transform) so route
+            // world positions are used as-is and never offset.
+            GameObject vehicle = Instantiate(prefab, position, Quaternion.identity);
             vehicle.name = prefab.name + "_Traffic_" + spawned;
 
             NPCVehiclePath path = vehicle.GetComponent<NPCVehiclePath>();
@@ -73,6 +122,12 @@ public class TrafficSpawner : MonoBehaviour
 
             spawnedPositions.Add(position);
             spawned++;
+        }
+
+        Debug.Log($"[TrafficSpawner] Spawned {spawned} vehicles.");
+        if (spawned == 0)
+        {
+            Debug.LogWarning("[TrafficSpawner] Spawned 0 vehicles. Check that routes have waypoints and prefabs are assigned.");
         }
     }
 

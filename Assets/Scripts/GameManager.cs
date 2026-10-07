@@ -24,6 +24,18 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         SetupRandomDailyRoute();
+        EnsureTrafficSpawner();
+    }
+
+    // Safety net: if no TrafficSpawner exists in the scene (e.g. a broken
+    // scene reference), create one at runtime so vehicles always appear.
+    void EnsureTrafficSpawner()
+    {
+        if (FindFirstObjectByType<TrafficSpawner>() != null) return;
+
+        GameObject go = new GameObject("TrafficSpawner");
+        go.AddComponent<TrafficSpawner>();
+        Debug.Log("[GameManager] No TrafficSpawner found in scene; created one at runtime.");
     }
 
     public void SetupRandomDailyRoute()

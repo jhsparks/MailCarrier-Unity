@@ -7,10 +7,12 @@ public class NPCVehiclePath : MonoBehaviour
     public float rotationSpeed = 5f;
 
     [Header("Traffic Spacing")]
-    [Tooltip("Minimum gap to keep from a vehicle ahead.")]
+    [Tooltip("Hard minimum gap between any two vehicles (never closer than this).")]
     public float followDistance = 7f;
-    [Tooltip("How far ahead to look for other vehicles.")]
+    [Tooltip("How far ahead to look for vehicles in the path of travel.")]
     public float detectionDistance = 12f;
+    [Tooltip("Radius used to detect vehicles crowding from any direction.")]
+    public float crowdRadius = 5f;
     [Tooltip("Layer mask used to detect vehicles ahead. Defaults to everything.")]
     public LayerMask vehicleMask = ~0;
 
@@ -19,6 +21,14 @@ public class NPCVehiclePath : MonoBehaviour
     private float currentSpeed;
     private float cruiseSpeed;
     private bool initialized;
+    private int carId;
+    private static int nextCarId;
+    private static readonly Collider[] crowdBuffer = new Collider[16];
+
+    void Awake()
+    {
+        carId = nextCarId++;
+    }
 
     void Start()
     {
@@ -66,23 +76,63 @@ public class NPCVehiclePath : MonoBehaviour
         Transform targetNode = currentWaypoints[currentWaypointIndex];
         Vector3 targetPosition = new Vector3(targetNode.position.x, transform.position.y, targetNode.position.z);
 
-        // Traffic-aware braking: slow down / stop to keep a gap from the
-        // vehicle in front so cars never drive on top of each other.
+        Vector3 direction = (targetPosition - transform.position).normalized;
+
         float desiredSpeed = cruiseSpeed;
-        RaycastHit hit;
-        Vector3 origin = transform.position + Vector3.up * 0.5f;
-        if (Physics.Raycast(origin, transform.forward, out hit, detectionDistance, vehicleMask, QueryTriggerInteraction.Ignore))
+        if (direction != Vector3.zero)
         {
-            if (hit.transform != transform && hit.transform.GetComponentInParent<NPCVehiclePath>() != null)
+            Vector3 center = transform.position + Vector3.up * 0.9f;
+
+            // LAYER 1: hard crowd stop. If another vehicle is within the hard
+            // minimum distance in ANY direction (converging at a node, side by
+            // side, etc.), one of the two yields so they never touch. Only the
+            // "lower priority" car (higher InstanceID) brakes; the other keeps
+            // going, which breaks symmetry and prevents gridlock deadlock.
+            int count = Physics.OverlapSphereNonAlloc(center, crowdRadius, crowdBuffer, vehicleMask, QueryTriggerInteraction.Ignore);
+            float nearestCrowd = float.MaxValue;
+            NPCVehiclePath nearestOther = null;
+            for (int i = 0; i < count; i++)
             {
-                float gap = hit.distance - followDistance;
-                if (gap <= 0f)
+                NPCVehiclePath other = crowdBuffer[i].GetComponentInParent<NPCVehiclePath>();
+                if (other == null || other == this) continue;
+                float d = Vector3.Distance(transform.position, other.transform.position);
+                if (d < nearestCrowd)
                 {
-                    desiredSpeed = 0f;
+                    nearestCrowd = d;
+                    nearestOther = other;
                 }
-                else
+            }
+
+            if (nearestOther != null && nearestCrowd < followDistance)
+            {
+                // I yield only if the other car has right of way (lower id).
+                bool iYield = GetInstanceID() > nearestOther.GetInstanceID();
+                if (iYield)
                 {
-                    desiredSpeed = Mathf.Min(desiredSpeed, cruiseSpeed * (gap / followDistance));
+                    float gap = nearestCrowd - followDistance * 0.5f;
+                    desiredSpeed = gap <= 0f ? 0f : cruiseSpeed * 0.3f;
+                }
+            }
+
+            // LAYER 2: follow the car directly ahead at a safe gap.
+            if (desiredSpeed > 0f)
+            {
+                RaycastHit[] hits = Physics.SphereCastAll(center, 1.3f, direction, detectionDistance, vehicleMask, QueryTriggerInteraction.Ignore);
+                float nearestAhead = float.MaxValue;
+                for (int i = 0; i < hits.Length; i++)
+                {
+                    NPCVehiclePath other = hits[i].transform.GetComponentInParent<NPCVehiclePath>();
+                    if (other != null && other != this && hits[i].distance < nearestAhead)
+                    {
+                        nearestAhead = hits[i].distance;
+                    }
+                }
+
+                if (nearestAhead < float.MaxValue)
+                {
+                    float gap = nearestAhead - followDistance;
+                    if (gap <= 0f) desiredSpeed = 0f;
+                    else desiredSpeed = Mathf.Min(desiredSpeed, cruiseSpeed * (gap / followDistance));
                 }
             }
         }
@@ -92,7 +142,6 @@ public class NPCVehiclePath : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, currentSpeed * Time.deltaTime);
 
-        Vector3 direction = (targetPosition - transform.position).normalized;
         if (direction != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(direction);
