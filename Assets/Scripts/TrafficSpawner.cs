@@ -111,6 +111,7 @@ public class TrafficSpawner : MonoBehaviour
             path.routes = routes;
             path.speed = speed;
             path.rotationSpeed = rotationSpeed;
+            path.AssignRoute(route, waypointIndex);
 
             // Ensure spawned cars can be detected by the follow/braking raycasts.
             if (vehicle.GetComponentInChildren<Collider>() == null)

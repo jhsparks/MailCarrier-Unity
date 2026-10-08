@@ -37,7 +37,47 @@ public class NPCVehiclePath : MonoBehaviour
         cruiseSpeed = speed * Random.Range(0.8f, 1.2f);
         currentSpeed = cruiseSpeed;
 
-        AssignRandomRoute();
+        if (!initialized) AssignRandomRoute();
+    }
+
+    public void AssignRoute(Transform route, int waypointIndex)
+    {
+        if (route == null || route.childCount == 0) return;
+        currentWaypoints = new Transform[route.childCount];
+        for (int i = 0; i < route.childCount; i++) currentWaypoints[i] = route.GetChild(i);
+        currentWaypointIndex = Mathf.Clamp(waypointIndex, 0, currentWaypoints.Length - 1);
+        initialized = true;
+        transform.position = currentWaypoints[currentWaypointIndex].position;
+        SnapToGround();
+        // Aim at the next node so the car does not start sideways.
+        currentWaypointIndex = (currentWaypointIndex + 1) % currentWaypoints.Length;
+        Vector3 d = currentWaypoints[currentWaypointIndex].position - transform.position;
+        d.y = 0f;
+        if (d != Vector3.zero) transform.rotation = Quaternion.LookRotation(d);
+    }
+
+    void SnapToGround()
+    {
+        Vector3 origin = transform.position + Vector3.up * 5f;
+        RaycastHit[] hits = Physics.RaycastAll(origin, Vector3.down, 30f, ~0, QueryTriggerInteraction.Ignore);
+        float best = float.MaxValue;
+        float groundY = transform.position.y;
+        for (int i = 0; i < hits.Length; i++)
+        {
+            if (hits[i].transform.IsChildOf(transform)) continue;
+            if (hits[i].transform.GetComponentInParent<NPCVehiclePath>() != null) continue;
+            if (hits[i].distance < best)
+            {
+                best = hits[i].distance;
+                groundY = hits[i].point.y;
+            }
+        }
+        if (best < float.MaxValue)
+        {
+            Vector3 p = transform.position;
+            p.y = groundY;
+            transform.position = p;
+        }
     }
 
     public void AssignRandomRoute()
@@ -67,6 +107,7 @@ public class NPCVehiclePath : MonoBehaviour
         }
 
         transform.position = currentWaypoints[currentWaypointIndex].position;
+        SnapToGround();
     }
 
     void Update()
@@ -103,10 +144,12 @@ public class NPCVehiclePath : MonoBehaviour
                 }
             }
 
-            if (nearestOther != null && nearestCrowd < followDistance)
+            bool otherAhead = nearestOther != null &&
+                Vector3.Dot(direction, (nearestOther.transform.position - transform.position).normalized) > 0.1f;
+            if (nearestOther != null && nearestCrowd < followDistance && otherAhead)
             {
                 // I yield only if the other car has right of way (lower id).
-                bool iYield = GetInstanceID() > nearestOther.GetInstanceID();
+                bool iYield = carId > nearestOther.carId;
                 if (iYield)
                 {
                     float gap = nearestCrowd - followDistance * 0.5f;
@@ -141,6 +184,7 @@ public class NPCVehiclePath : MonoBehaviour
         currentSpeed = Mathf.MoveTowards(currentSpeed, desiredSpeed, 20f * Time.deltaTime);
 
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, currentSpeed * Time.deltaTime);
+        SnapToGround();
 
         if (direction != Vector3.zero)
         {
