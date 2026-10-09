@@ -528,7 +528,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5591861522120456108, guid: a03a9df0edb623a4095e3b307f481082, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 420892, guid: a03a9df0edb623a4095e3b307f481082, type: 3}
       insertIndex: -1
@@ -2533,7 +2534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &79324885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3047,7 +3048,7 @@ Transform:
   m_GameObject: {fileID: 102948981}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 4.1992416, y: 0.6088744, z: 0.13764954}
+  m_LocalPosition: {x: 4.1992416, y: 0.6088744, z: 0.037651062}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3065,7 +3066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &102948984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3085,7 +3086,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &106007689
 PrefabInstance:
@@ -4286,7 +4287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &142527195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4306,7 +4307,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &142735564
 PrefabInstance:
@@ -4539,7 +4540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &146606316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4606,7 +4607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &153066158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8997,7 +8998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &299148750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11837,7 +11838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &386735047
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12502,7 +12503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &406100329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12522,7 +12523,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &408553775
 GameObject:
@@ -13188,7 +13189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &423126109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13565,7 +13566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &432972525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13787,7 +13788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &442822133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13807,7 +13808,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &449956056
 PrefabInstance:
@@ -14675,7 +14676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &468379925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16037,7 +16038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &512365495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18104,7 +18105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &583908880
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18392,7 +18393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &605230044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19839,9 +19840,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668712045}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.026215, y: 0.62772, z: 0.14649248}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.026215, y: 0.62772, z: 0.046493992}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 271569664}
@@ -19858,7 +19859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &668712048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20545,7 +20546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &686838569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20683,7 +20684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &690020817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25794,7 +25795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &883550900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25923,7 +25924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &884841091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25990,7 +25991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &886367328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26521,7 +26522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &899731905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27016,7 +27017,7 @@ Transform:
   m_GameObject: {fileID: 907058445}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.422821, y: 0.5000003, z: 0.15016173}
+  m_LocalPosition: {x: 6.422821, y: 0.5000003, z: 0.05015944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27034,7 +27035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &907058448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27054,7 +27055,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 3}
+  m_Size: {x: 1, y: 1, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &908140709
 GameObject:
@@ -28071,7 +28072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &946222450
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29520,7 +29521,7 @@ Transform:
   m_GameObject: {fileID: 983114141}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.6734242, y: 0.71933347, z: 0.10235548}
+  m_LocalPosition: {x: 4.6734242, y: 0.71933347, z: 0.0023550838}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29538,7 +29539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &983114144
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29961,7 +29962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &988577178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30337,7 +30338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &999800247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30714,7 +30715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1025153029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31655,7 +31656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1088150138
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31908,7 +31909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1097593884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34814,7 +34815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1196676410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36627,9 +36628,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238375274}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.3573766, y: 0.52772, z: -0.21047163}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.3573766, y: 0.52772, z: -0.010467052}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 237872264}
@@ -36646,7 +36647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1238375277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37054,7 +37055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1256442764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39811,7 +39812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1343025653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41284,7 +41285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1407133033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42033,7 +42034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1422980145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43306,9 +43307,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484210281}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.026215, y: 0.62772, z: 0.09648943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.026215, y: 0.62772, z: -0.0035090595}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1771670178}
@@ -43325,7 +43326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1484210284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43815,7 +43816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1493580539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45420,7 +45421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1551809719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45786,7 +45787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1561981218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46101,7 +46102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1570009025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47404,7 +47405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1612642693
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47779,7 +47780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!1 &1632365312
 GameObject:
   m_ObjectHideFlags: 0
@@ -47825,7 +47826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1632365315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50015,7 +50016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1717735979
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52625,105 +52626,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.733991, y: 4.7862988, z: 0.71338004}
   m_Center: {x: 0.049395487, y: 2.3929443, z: 0}
---- !u!1001 &1802613049
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4808756814859089979, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_Name
-      value: DeliveryIndicator
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.61109
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.61109
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.61109
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 100.9083
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.87256
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 49.138817
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5329995268246626945, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4808756814859089979, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1802613051}
-  m_SourcePrefab: {fileID: 100100000, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
---- !u!1 &1802613050 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4808756814859089979, guid: a333b30dd56736c4cbcc8c1fff4b7e24, type: 3}
-  m_PrefabInstance: {fileID: 1802613049}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1802613051
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802613050}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1ea27cf4cb3c16b4b966ecf1ae5cb170, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1803923258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52844,7 +52746,7 @@ Transform:
   m_GameObject: {fileID: 1808980040}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 4.045906, y: 0.60646236, z: -0.070798874}
+  m_LocalPosition: {x: 4.045906, y: 0.60646236, z: 0.029201508}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52862,7 +52764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1808980043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52882,7 +52784,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1809394072
 PrefabInstance:
@@ -57072,7 +56974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1986738991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57120,7 +57022,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987568696}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.1329045, y: 0.62772, z: 0.0526433}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -57139,7 +57041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &1987568699
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57159,7 +57061,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1991816669
 PrefabInstance:
@@ -60273,7 +60175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de9ce04a80d3754e805198564bfc929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
-  deliveryIndicator: {fileID: 0}
+  deliveryIndicator: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!65 &2103664859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61753,6 +61655,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 485622, guid: 8be6a5c88ef3420449ea4b8e6df23556, type: 3}
   m_PrefabInstance: {fileID: 2147285101}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3581293218404703100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100.9083
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.87256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 49.138817
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062702200092646956, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551113698764653718, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
+      propertyPath: m_Name
+      value: DeliveryIndicator
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9fd2a638bf114144bbac879dd075acf3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -61772,4 +61731,4 @@ SceneRoots:
   - {fileID: 1151475998}
   - {fileID: 1825126027}
   - {fileID: 1280911506}
-  - {fileID: 1802613049}
+  - {fileID: 3581293218404703100}

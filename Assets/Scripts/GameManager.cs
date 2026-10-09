@@ -66,6 +66,17 @@ public class GameManager : MonoBehaviour
 
         Debug.Log($"[GameManager] Found {allDoorObjects.Length} objects tagged DeliveryDoor, {allTriggers.Count} with DoorTrigger3D.");
 
+        int missingIndicators = 0;
+        foreach (DoorTrigger3D trigger in allTriggers)
+        {
+            if (trigger.deliveryIndicator == null)
+            {
+                missingIndicators++;
+                Debug.LogWarning($"[GameManager] {trigger.name} has no Delivery Indicator assigned.", trigger);
+            }
+        }
+        Debug.Log($"[GameManager] {allTriggers.Count - missingIndicators} doors have an indicator, {missingIndicators} are missing one.");
+
         int targetAmount = Mathf.Min(dailyTargetCount, allTriggers.Count);
         for (int i = 0; i < targetAmount; i++)
         {
