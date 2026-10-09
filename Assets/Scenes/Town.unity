@@ -2557,6 +2557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 79324883}
   - component: {fileID: 79324884}
+  - component: {fileID: 79324885}
   m_Layer: 0
   m_Name: DoorTrigger_35
   m_TagString: DeliveryDoor
@@ -2573,7 +2574,7 @@ Transform:
   m_GameObject: {fileID: 79324882}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.499996, y: 0, z: 30.300032}
+  m_LocalPosition: {x: 21.699997, y: 1, z: 29.900032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2592,6 +2593,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &79324885
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79324882}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &79888860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3067,6 +3089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102948982}
   - component: {fileID: 102948983}
+  - component: {fileID: 102948984}
   m_Layer: 0
   m_Name: DoorTrigger_18
   m_TagString: DeliveryDoor
@@ -3083,7 +3106,7 @@ Transform:
   m_GameObject: {fileID: 102948981}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.499996, y: 0, z: 52.60002}
+  m_LocalPosition: {x: 56.099995, y: 0.5, z: 51.90002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3102,6 +3125,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &102948984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102948981}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &106007689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4266,6 +4310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 142527193}
   - component: {fileID: 142527194}
+  - component: {fileID: 142527195}
   m_Layer: 0
   m_Name: DoorTrigger_15
   m_TagString: DeliveryDoor
@@ -4282,7 +4327,7 @@ Transform:
   m_GameObject: {fileID: 142527192}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 70.3, y: 0, z: 92.60001}
+  m_LocalPosition: {x: 70, y: 0.5, z: 92.80001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4301,6 +4346,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &142527195
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142527192}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &142735564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4497,6 +4563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 146606314}
   - component: {fileID: 146606315}
+  - component: {fileID: 146606316}
   m_Layer: 0
   m_Name: DoorTrigger_12
   m_TagString: DeliveryDoor
@@ -4513,7 +4580,7 @@ Transform:
   m_GameObject: {fileID: 146606313}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 81.4, y: 0, z: 46}
+  m_LocalPosition: {x: 80.9, y: 0.70000005, z: 45.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4532,6 +4599,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &146606316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146606313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &153066155
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,6 +4630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153066156}
   - component: {fileID: 153066157}
+  - component: {fileID: 153066158}
   m_Layer: 0
   m_Name: DoorTrigger_44
   m_TagString: DeliveryDoor
@@ -4558,7 +4647,7 @@ Transform:
   m_GameObject: {fileID: 153066155}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -70.20001, y: 0, z: 30.400034}
+  m_LocalPosition: {x: -70.10001, y: 0.5, z: 30.300034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4577,6 +4666,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &153066158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153066155}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &154109951
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,7 +5064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 466690, guid: 70ea0ba299bdf0a49a2af90f19b23cca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -114.50365
+      value: -116.50365
       objectReference: {fileID: 0}
     - target: {fileID: 466690, guid: 70ea0ba299bdf0a49a2af90f19b23cca, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8899,6 +9009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 299148748}
   - component: {fileID: 299148749}
+  - component: {fileID: 299148750}
   m_Layer: 0
   m_Name: DoorTrigger_6
   m_TagString: DeliveryDoor
@@ -8915,7 +9026,7 @@ Transform:
   m_GameObject: {fileID: 299148747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.3, y: 0, z: -8.699999}
+  m_LocalPosition: {x: 40.7, y: 1, z: -9.199999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8934,6 +9045,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &299148750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299148747}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &300301349
 GameObject:
   m_ObjectHideFlags: 0
@@ -11702,6 +11834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386735045}
   - component: {fileID: 386735046}
+  - component: {fileID: 386735047}
   m_Layer: 0
   m_Name: DoorTrigger_29
   m_TagString: DeliveryDoor
@@ -11718,7 +11851,7 @@ Transform:
   m_GameObject: {fileID: 386735044}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.399996, y: 0, z: 55.60003}
+  m_LocalPosition: {x: 10.499996, y: 0.8, z: 56.200027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11737,6 +11870,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &386735047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386735044}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &387338196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12345,6 +12499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406100327}
   - component: {fileID: 406100328}
+  - component: {fileID: 406100329}
   m_Layer: 0
   m_Name: DoorTrigger_19
   m_TagString: DeliveryDoor
@@ -12361,7 +12516,7 @@ Transform:
   m_GameObject: {fileID: 406100326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.499996, y: 0, z: 42.90002}
+  m_LocalPosition: {x: 56.3, y: 0.5, z: 43.10002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12380,6 +12535,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &406100329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406100326}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &408553775
 GameObject:
   m_ObjectHideFlags: 0
@@ -12765,7 +12941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455286, guid: b3fd8ea55f8bdf9469ab92a17e818bc7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -113.86214
+      value: -115.86214
       objectReference: {fileID: 0}
     - target: {fileID: 455286, guid: b3fd8ea55f8bdf9469ab92a17e818bc7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13009,6 +13185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 423126107}
   - component: {fileID: 423126108}
+  - component: {fileID: 423126109}
   m_Layer: 0
   m_Name: DoorTrigger_47
   m_TagString: DeliveryDoor
@@ -13025,7 +13202,7 @@ Transform:
   m_GameObject: {fileID: 423126106}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.600018, y: 0, z: 54.000034}
+  m_LocalPosition: {x: -47.600018, y: 0.5, z: 53.700035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13044,6 +13221,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &423126109
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423126106}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &423327905
 GameObject:
   m_ObjectHideFlags: 0
@@ -13364,6 +13562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 432972523}
   - component: {fileID: 432972524}
+  - component: {fileID: 432972525}
   m_Layer: 0
   m_Name: DoorTrigger_14
   m_TagString: DeliveryDoor
@@ -13380,7 +13579,7 @@ Transform:
   m_GameObject: {fileID: 432972522}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 85.9, y: 0, z: 56.200005}
+  m_LocalPosition: {x: 86.5, y: 0.5, z: 56.500004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13399,6 +13598,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &432972525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432972522}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &437858313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13564,6 +13784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 442822131}
   - component: {fileID: 442822132}
+  - component: {fileID: 442822133}
   m_Layer: 0
   m_Name: DoorTrigger_48
   m_TagString: DeliveryDoor
@@ -13580,7 +13801,7 @@ Transform:
   m_GameObject: {fileID: 442822130}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.600018, y: 0, z: 70.40003}
+  m_LocalPosition: {x: -47.80002, y: 0.5, z: 70.40003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13599,6 +13820,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &442822133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442822130}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &449956056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14510,6 +14752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 468379923}
   - component: {fileID: 468379924}
+  - component: {fileID: 468379925}
   m_Layer: 0
   m_Name: DoorTrigger_27
   m_TagString: DeliveryDoor
@@ -14525,13 +14768,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468379922}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.199997, y: 0, z: 54.90003}
+  m_LocalRotation: {x: -0, y: 0.28046077, z: -0, w: 0.95986557}
+  m_LocalPosition: {x: 39.575447, y: 0.7, z: 55.58647}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 450383619}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 32.575, z: 0}
 --- !u!114 &468379924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14545,6 +14788,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &468379925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468379922}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &471420161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15847,6 +16111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 512365493}
   - component: {fileID: 512365494}
+  - component: {fileID: 512365495}
   m_Layer: 0
   m_Name: DoorTrigger_39
   m_TagString: DeliveryDoor
@@ -15863,7 +16128,7 @@ Transform:
   m_GameObject: {fileID: 512365492}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.400005, y: 0, z: 34.600033}
+  m_LocalPosition: {x: -22.100006, y: 1, z: 35.00003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15882,6 +16147,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &512365495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512365492}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &513196333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17892,6 +18178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 583908878}
   - component: {fileID: 583908879}
+  - component: {fileID: 583908880}
   m_Layer: 0
   m_Name: DoorTrigger_21
   m_TagString: DeliveryDoor
@@ -17908,7 +18195,7 @@ Transform:
   m_GameObject: {fileID: 583908877}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.599998, y: 0, z: 92.800026}
+  m_LocalPosition: {x: 21.099998, y: 0.5, z: 93.00002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17927,6 +18214,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &583908880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583908877}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &591572227
 GameObject:
   m_ObjectHideFlags: 0
@@ -17953,7 +18261,7 @@ Transform:
   m_GameObject: {fileID: 591572227}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.1, y: 0, z: -12.1}
+  m_LocalPosition: {x: 10.200001, y: 1.9, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18145,6 +18453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605230042}
   - component: {fileID: 605230043}
+  - component: {fileID: 605230044}
   m_Layer: 0
   m_Name: DoorTrigger_30
   m_TagString: DeliveryDoor
@@ -18161,7 +18470,7 @@ Transform:
   m_GameObject: {fileID: 605230041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.199995, y: 0, z: 55.60003}
+  m_LocalPosition: {x: 5.399996, y: 1, z: 55.90003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18180,6 +18489,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &605230044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605230041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &607139774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19589,6 +19919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 668712046}
   - component: {fileID: 668712047}
+  - component: {fileID: 668712048}
   m_Layer: 0
   m_Name: DoorTrigger_26
   m_TagString: DeliveryDoor
@@ -19605,7 +19936,7 @@ Transform:
   m_GameObject: {fileID: 668712045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.899998, y: 0, z: 71.70003}
+  m_LocalPosition: {x: 35.8, y: 0.5, z: 71.70003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19624,6 +19955,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &668712048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668712045}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &669585322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20254,6 +20606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 686838567}
   - component: {fileID: 686838568}
+  - component: {fileID: 686838569}
   m_Layer: 0
   m_Name: DoorTrigger_9
   m_TagString: DeliveryDoor
@@ -20269,13 +20622,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686838566}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 68.1, y: 0, z: -28.400003}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 68.29999, y: 0.39999998, z: -28.100004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 450383619}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &686838568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20289,6 +20642,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &686838569
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686838566}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &687896564
 GameObject:
   m_ObjectHideFlags: 0
@@ -20370,6 +20744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 690020815}
   - component: {fileID: 690020816}
+  - component: {fileID: 690020817}
   m_Layer: 0
   m_Name: DoorTrigger_28
   m_TagString: DeliveryDoor
@@ -20386,7 +20761,7 @@ Transform:
   m_GameObject: {fileID: 690020814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.699997, y: 0, z: 55.60003}
+  m_LocalPosition: {x: 18.699997, y: 0.9, z: 56.10003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20405,6 +20780,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &690020817
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690020814}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &693507373
 GameObject:
   m_ObjectHideFlags: 0
@@ -25432,6 +25828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 883550898}
   - component: {fileID: 883550899}
+  - component: {fileID: 883550900}
   m_Layer: 0
   m_Name: DoorTrigger_45
   m_TagString: DeliveryDoor
@@ -25448,7 +25845,7 @@ Transform:
   m_GameObject: {fileID: 883550897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.700016, y: 0, z: 31.900034}
+  m_LocalPosition: {x: -47.800014, y: 1, z: 32.200035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25467,6 +25864,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &883550900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883550897}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &883587839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25539,6 +25957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884841089}
   - component: {fileID: 884841090}
+  - component: {fileID: 884841091}
   m_Layer: 0
   m_Name: DoorTrigger_16
   m_TagString: DeliveryDoor
@@ -25555,7 +25974,7 @@ Transform:
   m_GameObject: {fileID: 884841088}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 70.5, y: 0, z: 104.10001}
+  m_LocalPosition: {x: 70.2, y: 0.5, z: 103.80001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25574,6 +25993,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &884841091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884841088}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &886367325
 GameObject:
   m_ObjectHideFlags: 0
@@ -25584,6 +26024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 886367326}
   - component: {fileID: 886367327}
+  - component: {fileID: 886367328}
   m_Layer: 0
   m_Name: DoorTrigger_40
   m_TagString: DeliveryDoor
@@ -25600,7 +26041,7 @@ Transform:
   m_GameObject: {fileID: 886367325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.600006, y: 0, z: 14.600033}
+  m_LocalPosition: {x: -37.600006, y: 0.5, z: 14.700033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25619,6 +26060,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &886367328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886367325}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &887488370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26093,6 +26555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 899731903}
   - component: {fileID: 899731904}
+  - component: {fileID: 899731905}
   m_Layer: 0
   m_Name: DoorTrigger_33
   m_TagString: DeliveryDoor
@@ -26109,7 +26572,7 @@ Transform:
   m_GameObject: {fileID: 899731902}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.500005, y: 0, z: 47.400032}
+  m_LocalPosition: {x: -6.6000047, y: 0.6, z: 47.600033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26128,6 +26591,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &899731905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899731902}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &899837186
 GameObject:
   m_ObjectHideFlags: 0
@@ -26584,6 +27068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 907058446}
   - component: {fileID: 907058447}
+  - component: {fileID: 907058448}
   m_Layer: 0
   m_Name: DoorTrigger_31
   m_TagString: DeliveryDoor
@@ -26600,7 +27085,7 @@ Transform:
   m_GameObject: {fileID: 907058445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.500006, y: 0, z: 64.200035}
+  m_LocalPosition: {x: -24.500006, y: 0.5, z: 64.200035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26619,6 +27104,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &907058448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907058445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &908140709
 GameObject:
   m_ObjectHideFlags: 0
@@ -27596,6 +28102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946222448}
   - component: {fileID: 946222449}
+  - component: {fileID: 946222450}
   m_Layer: 0
   m_Name: DoorTrigger_7
   m_TagString: DeliveryDoor
@@ -27612,7 +28119,7 @@ Transform:
   m_GameObject: {fileID: 946222447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.5, y: 0, z: -18.199999}
+  m_LocalPosition: {x: 40.7, y: 1, z: -17.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27631,6 +28138,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &946222450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946222447}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &949930247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29041,6 +29569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 983114142}
   - component: {fileID: 983114143}
+  - component: {fileID: 983114144}
   m_Layer: 0
   m_Name: DoorTrigger_23
   m_TagString: DeliveryDoor
@@ -29057,7 +29586,7 @@ Transform:
   m_GameObject: {fileID: 983114141}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09999561, y: 0, z: 92.400024}
+  m_LocalPosition: {x: 0.29999542, y: 0.6, z: 92.900024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29076,6 +29605,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &983114144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983114141}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &983343835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29439,6 +29989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988577176}
   - component: {fileID: 988577177}
+  - component: {fileID: 988577178}
   m_Layer: 0
   m_Name: DoorTrigger_42
   m_TagString: DeliveryDoor
@@ -29455,7 +30006,7 @@ Transform:
   m_GameObject: {fileID: 988577175}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -56.500004, y: 0, z: 14.600033}
+  m_LocalPosition: {x: -56.600002, y: 0.5, z: 14.800033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29474,6 +30025,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &988577178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988577175}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &991444384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29793,6 +30365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 999800245}
   - component: {fileID: 999800246}
+  - component: {fileID: 999800247}
   m_Layer: 0
   m_Name: DoorTrigger_5
   m_TagString: DeliveryDoor
@@ -29809,7 +30382,7 @@ Transform:
   m_GameObject: {fileID: 999800244}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.7, y: 0, z: 0.5000005}
+  m_LocalPosition: {x: 40.7, y: 1, z: 0.10000038}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29828,6 +30401,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &999800247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999800244}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1011470046
 GameObject:
   m_ObjectHideFlags: 0
@@ -30148,6 +30742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025153027}
   - component: {fileID: 1025153028}
+  - component: {fileID: 1025153029}
   m_Layer: 0
   m_Name: DoorTrigger_46
   m_TagString: DeliveryDoor
@@ -30164,7 +30759,7 @@ Transform:
   m_GameObject: {fileID: 1025153026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.700016, y: 0, z: 40.600037}
+  m_LocalPosition: {x: -47.800014, y: 1, z: 40.400036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30183,6 +30778,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1025153029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025153026}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1026078206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31061,6 +31677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1088150136}
   - component: {fileID: 1088150137}
+  - component: {fileID: 1088150138}
   m_Layer: 0
   m_Name: DoorTrigger_22
   m_TagString: DeliveryDoor
@@ -31077,7 +31694,7 @@ Transform:
   m_GameObject: {fileID: 1088150135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.499996, y: 0, z: 92.400024}
+  m_LocalPosition: {x: 8.799995, y: 1, z: 92.50002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31096,6 +31713,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1088150138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088150135}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1091018475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31292,6 +31930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1097593882}
   - component: {fileID: 1097593883}
+  - component: {fileID: 1097593884}
   m_Layer: 0
   m_Name: DoorTrigger_41
   m_TagString: DeliveryDoor
@@ -31308,7 +31947,7 @@ Transform:
   m_GameObject: {fileID: 1097593881}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.900005, y: 0, z: 14.600033}
+  m_LocalPosition: {x: -47.100006, y: 0.5, z: 14.600033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31327,6 +31966,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1097593884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097593881}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1098172745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34167,6 +34827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1196676408}
   - component: {fileID: 1196676409}
+  - component: {fileID: 1196676410}
   m_Layer: 0
   m_Name: DoorTrigger_38
   m_TagString: DeliveryDoor
@@ -34183,7 +34844,7 @@ Transform:
   m_GameObject: {fileID: 1196676407}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.400005, y: 0, z: 43.900032}
+  m_LocalPosition: {x: -22.300005, y: 1, z: 43.400032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34202,6 +34863,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1196676410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196676407}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1196793512
 GameObject:
   m_ObjectHideFlags: 0
@@ -35974,6 +36656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1238375275}
   - component: {fileID: 1238375276}
+  - component: {fileID: 1238375277}
   m_Layer: 0
   m_Name: DoorTrigger_17
   m_TagString: DeliveryDoor
@@ -35990,7 +36673,7 @@ Transform:
   m_GameObject: {fileID: 1238375274}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.899998, y: 0, z: 93.60002}
+  m_LocalPosition: {x: 47.999996, y: 0.39999998, z: 95.20002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36009,6 +36692,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1238375277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238375274}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1241201643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36360,6 +37064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1256442762}
   - component: {fileID: 1256442763}
+  - component: {fileID: 1256442764}
   m_Layer: 0
   m_Name: DoorTrigger_36
   m_TagString: DeliveryDoor
@@ -36376,7 +37081,7 @@ Transform:
   m_GameObject: {fileID: 1256442761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.599995, y: 0, z: 30.300032}
+  m_LocalPosition: {x: 26.599995, y: 1, z: 29.900032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36395,6 +37100,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1256442764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256442761}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1257670551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39091,6 +39817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1343025651}
   - component: {fileID: 1343025652}
+  - component: {fileID: 1343025653}
   m_Layer: 0
   m_Name: DoorTrigger_13
   m_TagString: DeliveryDoor
@@ -39107,7 +39834,7 @@ Transform:
   m_GameObject: {fileID: 1343025650}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94.2, y: 0, z: 41.9}
+  m_LocalPosition: {x: 94.299995, y: 0.59999996, z: 42.300003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39126,6 +39853,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1343025653
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343025650}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1345770698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40536,6 +41284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1407133031}
   - component: {fileID: 1407133032}
+  - component: {fileID: 1407133033}
   m_Layer: 0
   m_Name: DoorTrigger_43
   m_TagString: DeliveryDoor
@@ -40552,7 +41301,7 @@ Transform:
   m_GameObject: {fileID: 1407133030}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -66.20001, y: 0, z: 14.600033}
+  m_LocalPosition: {x: -66.40001, y: 0.5, z: 14.800033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40571,6 +41320,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1407133033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407133030}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1407690485
 GameObject:
   m_ObjectHideFlags: 0
@@ -41265,6 +42035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1422980143}
   - component: {fileID: 1422980144}
+  - component: {fileID: 1422980145}
   m_Layer: 0
   m_Name: DoorTrigger_3
   m_TagString: DeliveryDoor
@@ -41281,7 +42052,7 @@ Transform:
   m_GameObject: {fileID: 1422980142}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.99999714, y: 0, z: 14.000003}
+  m_LocalPosition: {x: -1.199997, y: 1, z: 15.300003}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41300,6 +42071,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1422980145
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422980142}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1423802159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42529,6 +43321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1484210282}
   - component: {fileID: 1484210283}
+  - component: {fileID: 1484210284}
   m_Layer: 0
   m_Name: DoorTrigger_25
   m_TagString: DeliveryDoor
@@ -42545,7 +43338,7 @@ Transform:
   m_GameObject: {fileID: 1484210281}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.699997, y: 0, z: 71.70003}
+  m_LocalPosition: {x: 24.499996, y: 0.5, z: 71.70003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42564,6 +43357,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1484210284
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484210281}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1484813832
 GameObject:
   m_ObjectHideFlags: 0
@@ -42997,6 +43811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1493580537}
   - component: {fileID: 1493580538}
+  - component: {fileID: 1493580539}
   m_Layer: 0
   m_Name: DoorTrigger_37
   m_TagString: DeliveryDoor
@@ -43013,7 +43828,7 @@ Transform:
   m_GameObject: {fileID: 1493580536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.399994, y: 0, z: 30.300032}
+  m_LocalPosition: {x: 35.199993, y: 1, z: 30.10003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43032,6 +43847,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1493580539
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493580536}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1495504545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44580,6 +45416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551809717}
   - component: {fileID: 1551809718}
+  - component: {fileID: 1551809719}
   m_Layer: 0
   m_Name: DoorTrigger_10
   m_TagString: DeliveryDoor
@@ -44596,7 +45433,7 @@ Transform:
   m_GameObject: {fileID: 1551809716}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.1, y: 0, z: -8.900003}
+  m_LocalPosition: {x: 66, y: 0.39999998, z: -9.100004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44615,6 +45452,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1551809719
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551809716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1551900872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44924,6 +45782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1561981216}
   - component: {fileID: 1561981217}
+  - component: {fileID: 1561981218}
   m_Layer: 0
   m_Name: DoorTrigger_34
   m_TagString: DeliveryDoor
@@ -44940,7 +45799,7 @@ Transform:
   m_GameObject: {fileID: 1561981215}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8999958, y: 0, z: 31.700033}
+  m_LocalPosition: {x: 0.5999956, y: 0.8, z: 31.200033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44959,6 +45818,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1561981218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561981215}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1562680485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45217,6 +46097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1570009023}
   - component: {fileID: 1570009024}
+  - component: {fileID: 1570009025}
   m_Layer: 0
   m_Name: DoorTrigger_4
   m_TagString: DeliveryDoor
@@ -45233,7 +46114,7 @@ Transform:
   m_GameObject: {fileID: 1570009022}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.700005, y: 0, z: 14.000003}
+  m_LocalPosition: {x: 18.700005, y: 1, z: 15.000003}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45252,6 +46133,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1570009025
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570009022}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1570121794
 GameObject:
   m_ObjectHideFlags: 0
@@ -46492,6 +47394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1612642691}
   - component: {fileID: 1612642692}
+  - component: {fileID: 1612642693}
   m_Layer: 0
   m_Name: DoorTrigger_2
   m_TagString: DeliveryDoor
@@ -46508,7 +47411,7 @@ Transform:
   m_GameObject: {fileID: 1612642690}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.499998, y: 0, z: 8.700004}
+  m_LocalPosition: {x: -21.499998, y: 1, z: 8.400003}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46527,6 +47430,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1612642693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612642690}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1620174111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46824,6 +47748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1632365313}
   - component: {fileID: 1632365314}
+  - component: {fileID: 1632365315}
   m_Layer: 0
   m_Name: DoorTrigger_32
   m_TagString: DeliveryDoor
@@ -46840,7 +47765,7 @@ Transform:
   m_GameObject: {fileID: 1632365312}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.500005, y: 0, z: 54.20003}
+  m_LocalPosition: {x: -6.6000047, y: 0.5, z: 54.30003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46859,6 +47784,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1632365315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632365312}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1634577973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48980,6 +49926,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1717735977}
   - component: {fileID: 1717735978}
+  - component: {fileID: 1717735979}
   m_Layer: 0
   m_Name: DoorTrigger_1
   m_TagString: DeliveryDoor
@@ -48996,7 +49943,7 @@ Transform:
   m_GameObject: {fileID: 1717735976}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.899998, y: 0, z: -10.899998}
+  m_LocalPosition: {x: -39, y: 1.9, z: -11.699997}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49015,6 +49962,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1717735979
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717735976}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1718398820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51685,6 +52653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1808980041}
   - component: {fileID: 1808980042}
+  - component: {fileID: 1808980043}
   m_Layer: 0
   m_Name: DoorTrigger_20
   m_TagString: DeliveryDoor
@@ -51701,7 +52670,7 @@ Transform:
   m_GameObject: {fileID: 1808980040}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.499996, y: 0, z: 33.80002}
+  m_LocalPosition: {x: 56.199993, y: 0.5, z: 34.20002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51720,6 +52689,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1808980043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808980040}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1809394072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55864,6 +56854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1986738989}
   - component: {fileID: 1986738990}
+  - component: {fileID: 1986738991}
   m_Layer: 0
   m_Name: DoorTrigger_11
   m_TagString: DeliveryDoor
@@ -55880,7 +56871,7 @@ Transform:
   m_GameObject: {fileID: 1986738988}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 88.4, y: 0, z: 30.4}
+  m_LocalPosition: {x: 88.9, y: 0.5, z: 30.199999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55899,6 +56890,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1986738991
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986738988}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1987568696
 GameObject:
   m_ObjectHideFlags: 0
@@ -55909,6 +56921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1987568697}
   - component: {fileID: 1987568698}
+  - component: {fileID: 1987568699}
   m_Layer: 0
   m_Name: DoorTrigger_24
   m_TagString: DeliveryDoor
@@ -55925,7 +56938,7 @@ Transform:
   m_GameObject: {fileID: 1987568696}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8999958, y: 0, z: 71.70003}
+  m_LocalPosition: {x: 4.499996, y: 0.5, z: 71.70003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55944,6 +56957,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &1987568699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987568696}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1991816669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59018,6 +60052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2103664857}
   - component: {fileID: 2103664858}
+  - component: {fileID: 2103664859}
   m_Layer: 0
   m_Name: DoorTrigger_8
   m_TagString: DeliveryDoor
@@ -59034,7 +60069,7 @@ Transform:
   m_GameObject: {fileID: 2103664856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27, y: 0, z: -53.800003}
+  m_LocalPosition: {x: 27.3, y: 0.5, z: -54.000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59053,6 +60088,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger3D
   deliveryIndicator: {fileID: 0}
+--- !u!65 &2103664859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103664856}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2107306560
 PrefabInstance:
   m_ObjectHideFlags: 0

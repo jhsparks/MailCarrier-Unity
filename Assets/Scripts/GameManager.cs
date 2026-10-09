@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void SetupRandomDailyRoute()
     {
-        mailCarried = dailyTargetCount;
+        mailCarried = 0;
         mailDelivered = 0;
 
         GameObject[] allDoorObjects = GameObject.FindGameObjectsWithTag("DeliveryDoor");
@@ -71,6 +71,16 @@ public class GameManager : MonoBehaviour
         }
 
         mailUpdated?.Invoke(mailCarried, dailyTargetCount);
+    }
+
+    public bool PickUpMail()
+    {
+        int remaining = dailyTargetCount - mailDelivered;
+        if (mailCarried >= remaining) return false;
+
+        mailCarried = remaining;
+        mailUpdated?.Invoke(mailCarried, dailyTargetCount);
+        return true;
     }
 
     public bool DeliverMail()
