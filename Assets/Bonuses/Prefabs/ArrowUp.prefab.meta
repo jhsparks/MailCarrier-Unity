@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 537acc9eeabbac74db8ba931b22e54e8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 401356
+  packageName: Bonuses
+  packageVersion: 1.0
+  assetPath: Assets/Bonuses/Prefabs/ArrowUp.prefab
+  uploadId: 977766

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a333b30dd56736c4cbcc8c1fff4b7e24
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 401356
+  packageName: Bonuses
+  packageVersion: 1.0
+  assetPath: Assets/Bonuses/Prefabs/Star.prefab
+  uploadId: 977766

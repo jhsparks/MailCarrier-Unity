@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fd7fa581d76d4504783659f588d60091
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 401356
+  packageName: Bonuses
+  packageVersion: 1.0
+  assetPath: Assets/Bonuses/Prefabs/Cup.prefab
+  uploadId: 977766

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 94c907e219c14e046b5d521b166b1dc9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 401356
+  packageName: Bonuses
+  packageVersion: 1.0
+  assetPath: Assets/Bonuses/Prefabs/Flash.prefab
+  uploadId: 977766

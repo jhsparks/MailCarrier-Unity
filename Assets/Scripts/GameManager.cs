@@ -64,6 +64,8 @@ public class GameManager : MonoBehaviour
             allTriggers[randomIndex] = temp;
         }
 
+        Debug.Log($"[GameManager] Found {allDoorObjects.Length} objects tagged DeliveryDoor, {allTriggers.Count} with DoorTrigger3D.");
+
         int targetAmount = Mathf.Min(dailyTargetCount, allTriggers.Count);
         for (int i = 0; i < targetAmount; i++)
         {

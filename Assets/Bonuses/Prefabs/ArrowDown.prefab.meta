@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f2ef48ecd3f269e4db4fd4fd30e1ade6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 401356
+  packageName: Bonuses
+  packageVersion: 1.0
+  assetPath: Assets/Bonuses/Prefabs/ArrowDown.prefab
+  uploadId: 977766

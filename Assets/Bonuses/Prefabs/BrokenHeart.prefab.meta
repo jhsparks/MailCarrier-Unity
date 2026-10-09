@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 14841d3964526bd49a9a58d6a665fea3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 401356
+  packageName: Bonuses
+  packageVersion: 1.0
+  assetPath: Assets/Bonuses/Prefabs/BrokenHeart.prefab
+  uploadId: 977766

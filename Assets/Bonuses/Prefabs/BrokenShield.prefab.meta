@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 55d54465f1afcd649a1fcf1326713720
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 401356
+  packageName: Bonuses
+  packageVersion: 1.0
+  assetPath: Assets/Bonuses/Prefabs/BrokenShield.prefab
+  uploadId: 977766
