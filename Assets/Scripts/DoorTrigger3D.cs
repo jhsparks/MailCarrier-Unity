@@ -7,6 +7,19 @@ public class DoorTrigger3D : MonoBehaviour
     private bool playerInRange = false;
     private bool hasDelivered = false;
 
+    void Awake()
+    {
+        if (deliveryIndicator == null)
+        {
+            Transform root = transform.parent != null ? transform.parent : transform;
+            Transform found = root.Find("DeliveryIndicator");
+            if (found == null) found = transform.Find("DeliveryIndicator");
+            if (found != null) deliveryIndicator = found.gameObject;
+        }
+
+        if (deliveryIndicator != null) deliveryIndicator.SetActive(false);
+    }
+
     public void ResetDoor()
     {
         isTargetForToday = false;
