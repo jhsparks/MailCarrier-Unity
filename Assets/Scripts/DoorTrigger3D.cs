@@ -9,6 +9,11 @@ public class DoorTrigger3D : MonoBehaviour
 
     void Awake()
     {
+        if (deliveryIndicator != null && !deliveryIndicator.scene.IsValid())
+        {
+            deliveryIndicator = null;
+        }
+
         if (deliveryIndicator == null)
         {
             Transform root = transform.parent != null ? transform.parent : transform;
@@ -32,6 +37,7 @@ public class DoorTrigger3D : MonoBehaviour
         isTargetForToday = true;
         hasDelivered = false;
         if (deliveryIndicator != null) deliveryIndicator.SetActive(true);
+        Debug.Log($"[DoorTrigger3D] Activated {name} (indicator: {(deliveryIndicator != null ? deliveryIndicator.name : "none")})", this);
     }
 
     void Update()
