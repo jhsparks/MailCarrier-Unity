@@ -23,18 +23,19 @@ public class UIManager3D : MonoBehaviour
 
     void Start()
     {
-        winPanel.SetActive(false);
-        restartButton.onClick.AddListener(RestartDay);
+        if (winPanel != null) winPanel.SetActive(false);
+        if (restartButton != null) restartButton.onClick.AddListener(RestartDay);
     }
 
     void UpdateMailUI(int carried, int total)
     {
+        if (mailText == null) return;
         mailText.text = $"Mail: {carried} / {total}";
     }
 
     void ShowWinPanel()
     {
-        winPanel.SetActive(true);
+        if (winPanel != null) winPanel.SetActive(true);
     }
 
     void RestartDay()

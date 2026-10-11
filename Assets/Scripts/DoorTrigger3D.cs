@@ -46,6 +46,14 @@ public class DoorTrigger3D : MonoBehaviour
         }
     }
 
+    void LateUpdate()
+    {
+        if (deliveryIndicator == null) return;
+
+        bool shouldShow = isTargetForToday && !hasDelivered;
+        if (deliveryIndicator.activeSelf != shouldShow) deliveryIndicator.SetActive(shouldShow);
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")) playerInRange = true;
