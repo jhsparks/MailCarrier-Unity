@@ -4562,6 +4562,56 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &151636372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151636374}
+  - component: {fileID: 151636373}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &151636373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151636372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b238ee608de7bff46a3c7b8471626266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  backgroundMusic: {fileID: 8300000, guid: f5d2c56a076600e4fbce299761b31080, type: 3}
+  doorDelivered: {fileID: 8300000, guid: 6b3321a7fcaaed145a457f7612ee777c, type: 3}
+  pickupMail: {fileID: 8300000, guid: d8d711055194daa4ca9ec73c5d588178, type: 3}
+  allMailDelivered: {fileID: 8300000, guid: be0c48bb698e21f44b7cca6098d2c977, type: 3}
+  musicVolume: 0.5
+  sfxVolume: 1
+--- !u!4 &151636374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151636372}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.76849, y: 9.54576, z: 23.33464}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &153066155
 GameObject:
   m_ObjectHideFlags: 0
@@ -16916,6 +16966,12 @@ MonoBehaviour:
   driveSpeed: 14
   turnSpeed: 70
   isBeingDriven: 0
+  vanSound: {fileID: 8300000, guid: 75409c5df58fd6f4c8ac44e1fa34f6ae, type: 3}
+  vanVolume: 0.8
+  idleVolume: 0.3
+  idlePitch: 0.8
+  maxPitch: 1.6
+  soundResponse: 3
 --- !u!1001 &540428502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33572,7 +33628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1142407822}
   m_Layer: 0
-  m_Name: Player & Vehicles
+  m_Name: Player, Van, NPCs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49152,7 +49208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1687775741
 RectTransform:
   m_ObjectHideFlags: 0
@@ -61604,3 +61660,4 @@ SceneRoots:
   - {fileID: 1151475998}
   - {fileID: 1825126027}
   - {fileID: 1280911506}
+  - {fileID: 151636374}

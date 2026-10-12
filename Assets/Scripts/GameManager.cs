@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
 
         mailCarried = remaining;
         mailUpdated?.Invoke(mailCarried, dailyTargetCount);
+        AudioManager.PlayPickupMail();
         return true;
     }
 
@@ -106,7 +107,12 @@ public class GameManager : MonoBehaviour
 
             if (mailDelivered >= dailyTargetCount)
             {
+                AudioManager.PlayAllMailDelivered();
                 dayCompleted?.Invoke();
+            }
+            else
+            {
+                AudioManager.PlayDoorDelivered();
             }
             return true;
         }
