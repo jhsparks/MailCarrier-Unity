@@ -12,6 +12,13 @@ public class DrivableVan : MonoBehaviour
     public float maxPitch = 1.6f;
     public float soundResponse = 3f;
 
+    [Header("Horn")]
+    public KeyCode hornKey = KeyCode.H;
+    [Tooltip("If empty, Resources/Horns/van horn is used.")]
+    public AudioClip hornClip;
+    [Range(0f, 1f)] public float hornVolume = 0.8f;
+    private AudioSource hornAudio;
+
     public float maxStepHeight = 0.4f;
     public float stepSpeed = 2.5f;
     public float stepSmoothing = 12f;
@@ -46,6 +53,13 @@ public class DrivableVan : MonoBehaviour
         vanAudio.playOnAwake = false;
         vanAudio.spatialBlend = 0f;
         vanAudio.volume = vanVolume;
+
+        if (hornClip == null) hornClip = Resources.Load<AudioClip>("Horns/van horn");
+        hornAudio = gameObject.AddComponent<AudioSource>();
+        hornAudio.playOnAwake = false;
+        hornAudio.loop = false;
+        hornAudio.spatialBlend = 0f;
+        hornAudio.volume = hornVolume;
     }
 
     void Update()
@@ -54,7 +68,12 @@ public class DrivableVan : MonoBehaviour
 
         if (!isBeingDriven) return;
 
-        // Read user inputs during normal frames
+        if (Input.GetKeyDown(hornKey) && hornClip != null && hornAudio != null)
+        {
+            hornAudio.PlayOneShot(hornClip);
+        }
+
+        // Read user inputs
         moveInput = Input.GetAxis("Vertical");
         turnInput = Input.GetAxis("Horizontal");
     }

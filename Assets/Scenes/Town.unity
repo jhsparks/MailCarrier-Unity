@@ -19789,6 +19789,9 @@ MonoBehaviour:
   idlePitch: 0.8
   maxPitch: 1.6
   soundResponse: 3
+  hornKey: 104
+  hornClip: {fileID: 8300000, guid: 73aba9bb06724954395fa8578cf22512, type: 3}
+  hornVolume: 0.7
   maxStepHeight: 0.6
   stepSpeed: 2.5
   stepSmoothing: 12

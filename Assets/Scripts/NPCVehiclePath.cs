@@ -16,6 +16,22 @@ public class NPCVehiclePath : MonoBehaviour
     [Tooltip("Layer mask used to detect vehicles ahead. Defaults to everything.")]
     public LayerMask vehicleMask = ~0;
 
+    [Header("Horn")]
+    [Tooltip("Horn clips. If empty, Resources/Horns/car horn 1 and car horn 2 are used.")]
+    public AudioClip[] hornClips;
+    [Range(0f, 1f)] public float hornVolume = 0.7f;
+    public float hornMaxDistance = 45f;
+    [Tooltip("Seconds blocked before the first honk (min, max).")]
+    public Vector2 hornReactionTime = new Vector2(1f, 3f);
+    [Tooltip("Seconds between honks while still blocked (min, max).")]
+    public Vector2 hornCooldown = new Vector2(5f, 12f);
+
+    private AudioSource hornSource;
+    private float blockedTimer;
+    private float nextHornDelay;
+    private float hornCooldownTimer;
+    private static AudioClip[] defaultHorns;
+
     private Transform[] currentWaypoints;
     private int currentWaypointIndex = 0;
     private float currentSpeed;
@@ -29,6 +45,54 @@ public class NPCVehiclePath : MonoBehaviour
     {
         if (GetComponent<VehicleCollider>() == null) gameObject.AddComponent<VehicleCollider>();
         carId = nextCarId++;
+
+        if (hornClips == null || hornClips.Length == 0)
+        {
+            if (defaultHorns == null)
+            {
+                defaultHorns = new[]
+                {
+                    Resources.Load<AudioClip>("Horns/car horn 1"),
+                    Resources.Load<AudioClip>("Horns/car horn 2")
+                };
+            }
+            hornClips = defaultHorns;
+        }
+
+        hornSource = gameObject.AddComponent<AudioSource>();
+        hornSource.playOnAwake = false;
+        hornSource.loop = false;
+        hornSource.spatialBlend = 1f;
+        hornSource.rolloffMode = AudioRolloffMode.Linear;
+        hornSource.minDistance = 5f;
+        hornSource.maxDistance = hornMaxDistance;
+        hornSource.volume = hornVolume;
+        nextHornDelay = Random.Range(hornReactionTime.x, hornReactionTime.y);
+    }
+
+    void UpdateHorn(bool obstructed)
+    {
+        hornCooldownTimer -= Time.deltaTime;
+
+        if (!obstructed)
+        {
+            blockedTimer = 0f;
+            nextHornDelay = Random.Range(hornReactionTime.x, hornReactionTime.y);
+            return;
+        }
+
+        blockedTimer += Time.deltaTime;
+        if (blockedTimer < nextHornDelay || hornCooldownTimer > 0f) return;
+        if (hornSource == null || hornSource.isPlaying) return;
+
+        AudioClip clip = hornClips[Random.Range(0, hornClips.Length)];
+        if (clip == null) return;
+
+        hornSource.pitch = Random.Range(0.95f, 1.05f);
+        hornSource.PlayOneShot(clip);
+        hornCooldownTimer = Random.Range(hornCooldown.x, hornCooldown.y);
+        blockedTimer = 0f;
+        nextHornDelay = Random.Range(hornReactionTime.x, hornReactionTime.y);
     }
 
     void Start()
@@ -198,6 +262,7 @@ public class NPCVehiclePath : MonoBehaviour
         }
 
         // Ease toward the desired speed for smooth braking / accelerating.
+        UpdateHorn(desiredSpeed < cruiseSpeed * 0.3f && currentSpeed < cruiseSpeed * 0.5f);
         currentSpeed = Mathf.MoveTowards(currentSpeed, desiredSpeed, 20f * Time.deltaTime);
 
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, currentSpeed * Time.deltaTime);
