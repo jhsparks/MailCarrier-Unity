@@ -37,7 +37,11 @@ public class GameUI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(settingsKey)) ToggleSettings();
+        if (Input.GetKeyDown(settingsKey))
+        {
+            if (instructionsPanel != null && instructionsPanel.activeSelf) return;
+            ToggleSettings();
+        }
     }
 
     public void CloseInstructions()
@@ -52,6 +56,12 @@ public class GameUI : MonoBehaviour
         bool open = !settingsPanel.activeSelf;
         settingsPanel.SetActive(open);
         Time.timeScale = open ? 0f : 1f;
+        AudioListener.pause = open;
+    }
+
+    public void Resume()
+    {
+        if (settingsPanel != null && settingsPanel.activeSelf) ToggleSettings();
     }
 
     // Puts the player and van back at their starting spots (use when stuck).
@@ -72,12 +82,14 @@ public class GameUI : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void QuitToMenu()
     {
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         SceneManager.LoadScene("MainMenuScene");
     }
 
