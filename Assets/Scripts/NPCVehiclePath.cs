@@ -27,6 +27,7 @@ public class NPCVehiclePath : MonoBehaviour
 
     void Awake()
     {
+        if (GetComponent<VehicleCollider>() == null) gameObject.AddComponent<VehicleCollider>();
         carId = nextCarId++;
     }
 
@@ -110,8 +111,17 @@ public class NPCVehiclePath : MonoBehaviour
         SnapToGround();
     }
 
+    public bool IsWrecked { get; private set; }
+
+    public void SetWrecked(bool wrecked)
+    {
+        IsWrecked = wrecked;
+        if (!wrecked) currentSpeed = 0f;
+    }
+
     void Update()
     {
+        if (IsWrecked) return;
         if (currentWaypoints == null || currentWaypoints.Length == 0) return;
 
         Transform targetNode = currentWaypoints[currentWaypointIndex];
@@ -165,7 +175,14 @@ public class NPCVehiclePath : MonoBehaviour
                 for (int i = 0; i < hits.Length; i++)
                 {
                     NPCVehiclePath other = hits[i].transform.GetComponentInParent<NPCVehiclePath>();
-                    if (other != null && other != this && hits[i].distance < nearestAhead)
+                    bool obstacle = other != null && other != this;
+                    if (!obstacle && other == null)
+                    {
+                        VehicleCollider vc = hits[i].transform.GetComponentInParent<VehicleCollider>();
+                        obstacle = hits[i].transform.GetComponentInParent<DrivableVan>() != null ||
+                                   (vc != null && vc.IsKnocked);
+                    }
+                    if (obstacle && hits[i].distance < nearestAhead)
                     {
                         nearestAhead = hits[i].distance;
                     }

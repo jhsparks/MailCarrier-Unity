@@ -12,7 +12,17 @@ public class DrivableVan : MonoBehaviour
     public float maxPitch = 1.6f;
     public float soundResponse = 3f;
 
+    public float maxStepHeight = 0.4f;
+    public float stepSpeed = 2.5f;
+    public float stepSmoothing = 12f;
+    public float stepHoldTime = 0.15f;
+    private float stepTimer;
+    private float stepLift;
+    public float stepCheckDistance = 0.4f;
+    public float stepCheckWidth = 1f;
+
     private Rigidbody rb;
+    private Collider vanCollider;
     private AudioSource vanAudio;
     private float moveInput;
     private float turnInput;
@@ -20,6 +30,7 @@ public class DrivableVan : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        vanCollider = GetComponentInChildren<Collider>();
 
         AudioSource[] existing = GetComponents<AudioSource>();
         vanAudio = existing.Length > 0 ? existing[0] : gameObject.AddComponent<AudioSource>();
@@ -74,6 +85,38 @@ public class DrivableVan : MonoBehaviour
         }
     }
 
+    bool ShouldStepUp(Vector3 dir)
+    {
+        if (vanCollider == null) return false;
+
+        Bounds b = vanCollider.bounds;
+        float reach = Mathf.Max(b.extents.x, b.extents.z) + stepCheckDistance;
+        float lowY = b.min.y + 0.08f;
+        float highY = b.min.y + maxStepHeight;
+        Vector3 right = transform.right;
+
+        for (int i = -2; i <= 2; i++)
+        {
+            Vector3 side = right * (stepCheckWidth * i * 0.5f);
+            Vector3 low = new Vector3(b.center.x, lowY, b.center.z) + side;
+            Vector3 high = new Vector3(b.center.x, highY, b.center.z) + side;
+
+            if (RayBlocked(low, dir, reach) && !RayBlocked(high, dir, reach)) return true;
+        }
+        return false;
+    }
+
+    bool RayBlocked(Vector3 origin, Vector3 dir, float distance)
+    {
+        RaycastHit[] hits = Physics.RaycastAll(origin, dir, distance, ~0, QueryTriggerInteraction.Ignore);
+        foreach (RaycastHit hit in hits)
+        {
+            if (hit.collider.transform.IsChildOf(transform)) continue;
+            return true;
+        }
+        return false;
+    }
+
     void FixedUpdate()
     {
         if (!isBeingDriven) return;
@@ -81,6 +124,20 @@ public class DrivableVan : MonoBehaviour
         // Move vehicle using velocity to allow clean physics interaction
         Vector3 targetVelocity = transform.forward * moveInput * driveSpeed;
         targetVelocity.y = rb.linearVelocity.y; // Preserve gravity
+        if (Mathf.Abs(moveInput) > 0.1f && ShouldStepUp(transform.forward * Mathf.Sign(moveInput)))
+        {
+            stepTimer = stepHoldTime;
+        }
+        else
+        {
+            stepTimer -= Time.fixedDeltaTime;
+        }
+
+        stepLift = Mathf.MoveTowards(stepLift, stepTimer > 0f ? stepSpeed : 0f, stepSmoothing * Time.fixedDeltaTime);
+        if (stepLift > 0.01f)
+        {
+            targetVelocity.y = Mathf.Max(targetVelocity.y, stepLift);
+        }
         rb.linearVelocity = targetVelocity;
 
         // Smooth rotation based on turn input

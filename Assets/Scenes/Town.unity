@@ -1110,6 +1110,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 401076, guid: 8aed0f8fb93c2ed4c96a99dcc130b90d, type: 3}
   m_PrefabInstance: {fileID: 37728387}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &37840842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+  m_PrefabInstance: {fileID: 1777957677}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &38223404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2283,6 +2288,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
       propertyPath: m_Name
       value: car-5 (4)
@@ -2330,7 +2355,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1175049327}
   m_SourcePrefab: {fileID: 100100000, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
 --- !u!4 &69696037 stripped
 Transform:
@@ -3566,6 +3594,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -97.72342
@@ -3613,7 +3661,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1679761677}
   m_SourcePrefab: {fileID: 100100000, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
 --- !u!4 &111881060 stripped
 Transform:
@@ -5319,6 +5370,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 489578, guid: d59da3d7b9c463c478d64b0722fd1ff5, type: 3}
   m_PrefabInstance: {fileID: 156259390}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &156417931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+  m_PrefabInstance: {fileID: 1077636711}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &157034656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6354,6 +6410,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 455286, guid: b3fd8ea55f8bdf9469ab92a17e818bc7, type: 3}
   m_PrefabInstance: {fileID: 172981102}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &176926808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 860217003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &177831318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 107906, guid: 2cc5e9c8613078b47b47bdcf3dc32ae2, type: 3}
@@ -6927,6 +6988,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -176.46754
@@ -6970,7 +7051,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 419072484}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &193937140 stripped
 Transform:
@@ -7117,6 +7201,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 485622, guid: 8be6a5c88ef3420449ea4b8e6df23556, type: 3}
   m_PrefabInstance: {fileID: 200903047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &201368199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 1172108381}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &202321213
 PrefabInstance:
@@ -7636,6 +7725,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
       propertyPath: m_Name
       value: car-3 (1)
@@ -7683,7 +7792,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 524718996}
   m_SourcePrefab: {fileID: 100100000, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
 --- !u!4 &217166747 stripped
 Transform:
@@ -9811,6 +9923,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -96.16707
@@ -9854,7 +9986,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 825287130}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &282866394 stripped
 Transform:
@@ -12269,6 +12404,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
       propertyPath: m_Name
       value: car-5
@@ -12316,7 +12471,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1707252452}
   m_SourcePrefab: {fileID: 100100000, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
 --- !u!4 &351065432 stripped
 Transform:
@@ -12384,6 +12542,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 423560, guid: bfdde53371ba3b349b61d5bafef700d7, type: 3}
   m_PrefabInstance: {fileID: 352624402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &352889031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+  m_PrefabInstance: {fileID: 1294080149}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &354612573
 PrefabInstance:
@@ -13804,6 +13967,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -221.99094
@@ -13847,7 +14030,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 727857929}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &397662849 stripped
 Transform:
@@ -14916,6 +15102,29 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 103018, guid: 8aed0f8fb93c2ed4c96a99dcc130b90d, type: 3}
   m_PrefabInstance: {fileID: 952450178}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &419072481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 193937139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &419072484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419072481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &419302059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16322,6 +16531,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -158.15155
@@ -16365,7 +16594,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1796365402}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &460568087 stripped
 Transform:
@@ -17685,6 +17917,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1363786498}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &492296040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+  m_PrefabInstance: {fileID: 1351563036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &496589528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18551,6 +18788,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 498102, guid: 4000718aa726f174bb2a1e64ee9190cb, type: 3}
   m_PrefabInstance: {fileID: 513196333}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &516875019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+  m_PrefabInstance: {fileID: 1831235286}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &519894855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18804,6 +19046,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 466668, guid: 038d62757c80f794bb10c0b00599087a, type: 3}
   m_PrefabInstance: {fileID: 522153606}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &524718993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+  m_PrefabInstance: {fileID: 217166746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &524718996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524718993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &527316026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19048,6 +19313,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 485622, guid: 8be6a5c88ef3420449ea4b8e6df23556, type: 3}
   m_PrefabInstance: {fileID: 529259839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &529745857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 1076887956}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &530462614
 GameObject:
@@ -19500,6 +19770,12 @@ MonoBehaviour:
   idlePitch: 0.8
   maxPitch: 1.6
   soundResponse: 3
+  maxStepHeight: 0.6
+  stepSpeed: 2.5
+  stepSmoothing: 12
+  stepHoldTime: 0.15
+  stepCheckDistance: 0.8
+  stepCheckWidth: 1
 --- !u!1001 &540428502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21160,6 +21436,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 405128, guid: 156fad5b84ed1104d948668aca70b1ff, type: 3}
   m_PrefabInstance: {fileID: 592823854}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &595001265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+  m_PrefabInstance: {fileID: 2109091788}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &601526912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21544,6 +21825,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -91.0295
@@ -21587,7 +21888,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 613930045}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &611801592 stripped
 Transform:
@@ -21843,6 +22147,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 472612, guid: aa562231f82a2664490d4cd36e223e46, type: 3}
   m_PrefabInstance: {fileID: 612791276}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &613930042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 611801591}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &613930045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613930042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &617680809 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 107906, guid: 2cc5e9c8613078b47b47bdcf3dc32ae2, type: 3}
@@ -22593,6 +22920,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
       propertyPath: m_Name
       value: car-5 (5)
@@ -22640,7 +22987,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1779729885}
   m_SourcePrefab: {fileID: 100100000, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
 --- !u!4 &645682321 stripped
 Transform:
@@ -23085,6 +23435,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Name
       value: car-4 (1)
@@ -23132,7 +23502,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 665680998}
   m_SourcePrefab: {fileID: 100100000, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
 --- !u!4 &658870373 stripped
 Transform:
@@ -23242,6 +23615,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1570121795}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &665680995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+  m_PrefabInstance: {fileID: 658870372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &665680998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665680995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &666125059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23708,6 +24104,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Name
       value: car-4 (1)
@@ -23755,7 +24171,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 812685306}
   m_SourcePrefab: {fileID: 100100000, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
 --- !u!4 &671624203 stripped
 Transform:
@@ -24783,6 +25202,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 462720, guid: 8b23b54510c08544b924f8e4502acc8f, type: 3}
   m_PrefabInstance: {fileID: 697095825}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &698815094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+  m_PrefabInstance: {fileID: 1592519235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &700275135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25588,6 +26012,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 472486, guid: 7af3e402376047a46842073f130d347e, type: 3}
   m_PrefabInstance: {fileID: 727855068}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &727857926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 397662848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &727857929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727857926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &729794042
 GameObject:
   m_ObjectHideFlags: 0
@@ -26173,6 +26620,11 @@ MonoBehaviour:
   mass: 50
   drag: 0.5
   angularDrag: 0.5
+--- !u!1 &740594859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+  m_PrefabInstance: {fileID: 1763724429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &741291566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27758,6 +28210,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
       propertyPath: m_Name
       value: car-3 (5)
@@ -27805,7 +28277,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1049866531}
   m_SourcePrefab: {fileID: 100100000, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
 --- !u!4 &789769257 stripped
 Transform:
@@ -28322,6 +28797,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 425598, guid: 73121aa02ef2a1b42915f5842503a4fc, type: 3}
   m_PrefabInstance: {fileID: 810074604}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &812685303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+  m_PrefabInstance: {fileID: 671624202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &812685306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812685303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &813037306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28988,6 +29486,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 462376, guid: 6d7985f8534d19e4b8c5bc52a92a075a, type: 3}
   m_PrefabInstance: {fileID: 825261312}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &825287127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 282866393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &825287130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825287127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &827173072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29520,6 +30041,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 123838, guid: 8be6a5c88ef3420449ea4b8e6df23556, type: 3}
   m_PrefabInstance: {fileID: 1534338954}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &839974186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 2029043453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &842334758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 103018, guid: 8aed0f8fb93c2ed4c96a99dcc130b90d, type: 3}
@@ -29817,6 +30343,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -217.21048
@@ -29860,13 +30406,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 860217007}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &860217004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
   m_PrefabInstance: {fileID: 860217003}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &860217007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176926808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &864817472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30109,6 +30676,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
       propertyPath: m_Name
       value: car-3 (3)
@@ -30156,7 +30743,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1778277397}
   m_SourcePrefab: {fileID: 100100000, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
 --- !u!4 &877036541 stripped
 Transform:
@@ -30674,6 +31264,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
       propertyPath: m_Name
       value: car-5 (1)
@@ -30721,7 +31331,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1340561090}
   m_SourcePrefab: {fileID: 100100000, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
 --- !u!4 &883587840 stripped
 Transform:
@@ -30923,6 +31536,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 465408, guid: 2735bdfa72e806248aafddd7a7ab3177, type: 3}
   m_PrefabInstance: {fileID: 887488370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &887569796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+  m_PrefabInstance: {fileID: 1803923258}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &888816231
 GameObject:
@@ -34549,6 +35167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 450459033220447971, guid: bfdde53371ba3b349b61d5bafef700d7, type: 3}
+      propertyPath: mass
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36779,6 +37401,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 467192, guid: 52e3c281ef0f0ea4985188d26644edcb, type: 3}
   m_PrefabInstance: {fileID: 1046582728}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1049866528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+  m_PrefabInstance: {fileID: 789769256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1049866531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049866528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &1051572111
 GameObject:
   m_ObjectHideFlags: 0
@@ -37326,6 +37971,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -68.052185
@@ -37369,13 +38034,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1076887960}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &1076887957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
   m_PrefabInstance: {fileID: 1076887956}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1076887960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529745857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1077636711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37384,6 +38070,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
       propertyPath: m_Name
       value: car-3 (4)
@@ -37431,13 +38137,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1077636715}
   m_SourcePrefab: {fileID: 100100000, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
 --- !u!4 &1077636712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1854482904674943789, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
   m_PrefabInstance: {fileID: 1077636711}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1077636715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156417931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1080654206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39299,6 +40026,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 401076, guid: 8aed0f8fb93c2ed4c96a99dcc130b90d, type: 3}
   m_PrefabInstance: {fileID: 1116398508}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1117261464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 1662416841}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1120118319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39609,6 +40341,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
       propertyPath: m_Name
       value: car-3 (2)
@@ -39656,7 +40408,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1171482457}
   m_SourcePrefab: {fileID: 100100000, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
 --- !u!4 &1125726511 stripped
 Transform:
@@ -39799,6 +40554,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 462376, guid: 6d7985f8534d19e4b8c5bc52a92a075a, type: 3}
   m_PrefabInstance: {fileID: 1126897619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1127740916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+  m_PrefabInstance: {fileID: 1783110524}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1137935129
 PrefabInstance:
@@ -41076,6 +41836,29 @@ MonoBehaviour:
   mass: 100
   drag: 0.5
   angularDrag: 0.5
+--- !u!1 &1171482454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+  m_PrefabInstance: {fileID: 1125726510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1171482457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171482454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1172108381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41087,6 +41870,26 @@ PrefabInstance:
     - target: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_Name
       value: car-1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41131,13 +41934,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1172108385}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &1172108382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
   m_PrefabInstance: {fileID: 1172108381}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1172108385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201368199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1173873146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41206,6 +42030,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 466690, guid: 70ea0ba299bdf0a49a2af90f19b23cca, type: 3}
   m_PrefabInstance: {fileID: 1173873146}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1175049324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+  m_PrefabInstance: {fileID: 69696036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1175049327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175049324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &1177722711 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 125306, guid: b3fd8ea55f8bdf9469ab92a17e818bc7, type: 3}
@@ -44163,6 +45010,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
       propertyPath: m_Name
       value: car-5 (6)
@@ -44210,7 +45077,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1776406199}
   m_SourcePrefab: {fileID: 100100000, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
 --- !u!4 &1250467412 stripped
 Transform:
@@ -45968,6 +46838,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -231.76508
@@ -46015,13 +46905,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1294080153}
   m_SourcePrefab: {fileID: 100100000, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
 --- !u!4 &1294080150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
   m_PrefabInstance: {fileID: 1294080149}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1294080153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352889031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1294127898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47607,6 +48518,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 484514, guid: 8e3bf3e187a935d4f867c1af041ddfd2, type: 3}
   m_PrefabInstance: {fileID: 1331569157}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1340561087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+  m_PrefabInstance: {fileID: 883587839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1340561090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340561087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1341323115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47978,6 +48912,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
       propertyPath: m_Name
       value: car-5 (7)
@@ -48025,13 +48979,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1351563040}
   m_SourcePrefab: {fileID: 100100000, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
 --- !u!4 &1351563037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3216522020839006334, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
   m_PrefabInstance: {fileID: 1351563036}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1351563040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492296040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &1351992278 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 103018, guid: 8aed0f8fb93c2ed4c96a99dcc130b90d, type: 3}
@@ -55874,6 +56849,11 @@ MonoBehaviour:
   mass: 30
   drag: 0.5
   angularDrag: 0.5
+--- !u!1 &1569662129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+  m_PrefabInstance: {fileID: 1973680988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1570009022
 GameObject:
   m_ObjectHideFlags: 0
@@ -56808,6 +57788,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Name
       value: car-4
@@ -56855,13 +57855,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1592519239}
   m_SourcePrefab: {fileID: 100100000, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
 --- !u!4 &1592519236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7918152462298101275, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
   m_PrefabInstance: {fileID: 1592519235}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1592519239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698815094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1592631240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58857,6 +59878,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -122.62858
@@ -58900,13 +59941,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1662416845}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &1662416842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
   m_PrefabInstance: {fileID: 1662416841}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1662416845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117261464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1663591040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58958,6 +60020,10 @@ PrefabInstance:
     - target: {fileID: 480072, guid: c0f33eb139fcff34c8de2acd690a23fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145875066253291629, guid: c0f33eb139fcff34c8de2acd690a23fe, type: 3}
+      propertyPath: mass
+      value: 400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59681,6 +60747,29 @@ MonoBehaviour:
   mass: 30
   drag: 0.5
   angularDrag: 0.5
+--- !u!1 &1679761674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+  m_PrefabInstance: {fileID: 111881059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1679761677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679761674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1680688182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60705,6 +61794,29 @@ MonoBehaviour:
   mass: 30
   drag: 0.5
   angularDrag: 0.5
+--- !u!1 &1707252449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+  m_PrefabInstance: {fileID: 351065431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1707252452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707252449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &1708415230
 GameObject:
   m_ObjectHideFlags: 0
@@ -61289,6 +62401,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
       propertyPath: m_Name
       value: car-5 (2)
@@ -61336,7 +62468,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2034727469}
   m_SourcePrefab: {fileID: 100100000, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
 --- !u!4 &1734266841 stripped
 Transform:
@@ -62263,6 +63398,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Name
       value: car-4
@@ -62310,13 +63465,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2700726682996983417, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1763724433}
   m_SourcePrefab: {fileID: 100100000, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
 --- !u!4 &1763724430 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7918152462298101275, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
   m_PrefabInstance: {fileID: 1763724429}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1763724433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740594859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1763848261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62507,6 +63683,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
       propertyPath: m_Name
       value: car-3 (6)
@@ -62554,7 +63750,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1835373076}
   m_SourcePrefab: {fileID: 100100000, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
 --- !u!4 &1770024432 stripped
 Transform:
@@ -62923,6 +64122,29 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 125306, guid: b3fd8ea55f8bdf9469ab92a17e818bc7, type: 3}
   m_PrefabInstance: {fileID: 1793778813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1776406196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+  m_PrefabInstance: {fileID: 1250467411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1776406199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776406196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1776517752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63103,6 +64325,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5907287856291599723, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
       propertyPath: m_Name
       value: car-5 (3)
@@ -63150,13 +64392,57 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1777957681}
   m_SourcePrefab: {fileID: 100100000, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
 --- !u!4 &1777957678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3216522020839006334, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
   m_PrefabInstance: {fileID: 1777957677}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1777957681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37840842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
+--- !u!1 &1778277394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+  m_PrefabInstance: {fileID: 877036540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1778277397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778277394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1779041974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63219,6 +64505,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 489578, guid: d59da3d7b9c463c478d64b0722fd1ff5, type: 3}
   m_PrefabInstance: {fileID: 1779041974}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1779729882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+  m_PrefabInstance: {fileID: 645682320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1779729885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779729882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &1782104725 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 140358, guid: 0401a3f0164b9cf40bd8c14f152e69ab, type: 3}
@@ -63274,6 +64583,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -183.53787
@@ -63321,13 +64650,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1783110528}
   m_SourcePrefab: {fileID: 100100000, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
 --- !u!4 &1783110525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
   m_PrefabInstance: {fileID: 1783110524}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1783110528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127740916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1785560735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63831,6 +65181,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 463188, guid: 7538a3c85f736c74ea56d203349fde92, type: 3}
   m_PrefabInstance: {fileID: 1793836682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1796365399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 460568086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1796365402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796365399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1797690404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64346,6 +65719,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.30269
@@ -64393,13 +65786,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1803923262}
   m_SourcePrefab: {fileID: 100100000, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
 --- !u!4 &1803923259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
   m_PrefabInstance: {fileID: 1803923258}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1803923262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887569796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &1806944014
 GameObject:
   m_ObjectHideFlags: 0
@@ -65234,6 +66648,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -98.69576
@@ -65281,13 +66715,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1831235290}
   m_SourcePrefab: {fileID: 100100000, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
 --- !u!4 &1831235287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
   m_PrefabInstance: {fileID: 1831235286}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831235290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516875019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &1831361382 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 155992, guid: 4000718aa726f174bb2a1e64ee9190cb, type: 3}
@@ -65725,6 +67180,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 465408, guid: 2735bdfa72e806248aafddd7a7ab3177, type: 3}
   m_PrefabInstance: {fileID: 1835313819}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1835373073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+  m_PrefabInstance: {fileID: 1770024431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1835373076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835373073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &1836650684
 GameObject:
   m_ObjectHideFlags: 0
@@ -68622,6 +70100,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.945824
@@ -68665,7 +70163,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2017391726}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &1937126469 stripped
 Transform:
@@ -70058,6 +71559,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -390678165519709877, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
       propertyPath: m_Name
       value: car-3
@@ -70105,13 +71626,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1063203058504410888, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1973680992}
   m_SourcePrefab: {fileID: 100100000, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
 --- !u!4 &1973680989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1854482904674943789, guid: 8f68ff5d0268f164b999c138e00f3468, type: 3}
   m_PrefabInstance: {fileID: 1973680988}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1973680992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569662129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &1973778192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71497,6 +73039,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 423560, guid: bfdde53371ba3b349b61d5bafef700d7, type: 3}
   m_PrefabInstance: {fileID: 2017018439}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2017391723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+  m_PrefabInstance: {fileID: 1937126468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2017391726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017391723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &2017634997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71853,6 +73418,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: car-1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602772103794920000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -109.04181
@@ -71896,13 +73481,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1220010753389348547, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2029043457}
   m_SourcePrefab: {fileID: 100100000, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
 --- !u!4 &2029043454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7712658910458368441, guid: fa5a7eb1c03d6ba4da648e39b3f0dccd, type: 3}
   m_PrefabInstance: {fileID: 2029043453}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2029043457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839974186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &2030319870
 GameObject:
   m_ObjectHideFlags: 0
@@ -71996,6 +73602,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 467192, guid: 52e3c281ef0f0ea4985188d26644edcb, type: 3}
   m_PrefabInstance: {fileID: 2031054568}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2034727466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231417512580727665, guid: c7cc5a555dc86644b84fa322352960e7, type: 3}
+  m_PrefabInstance: {fileID: 1734266840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2034727469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034727466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &2037905229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75089,6 +76718,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Mass
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_LinearDamping
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -236.67456
@@ -75136,13 +76785,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2109091792}
   m_SourcePrefab: {fileID: 100100000, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
 --- !u!4 &2109091789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
   m_PrefabInstance: {fileID: 2109091788}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2109091792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595001265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1001 &2111252537
 PrefabInstance:
   m_ObjectHideFlags: 0
