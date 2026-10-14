@@ -5,6 +5,7 @@ public class GameUI : MonoBehaviour
 {
     public GameObject instructionsPanel;
     public GameObject settingsPanel;
+    public GameObject controlsPanel;
     public GameObject playerCharacter;
     public DrivableVan van;
     public KeyCode settingsKey = KeyCode.Escape;
@@ -28,6 +29,7 @@ public class GameUI : MonoBehaviour
         }
 
         if (settingsPanel != null) settingsPanel.SetActive(false);
+        if (controlsPanel != null) controlsPanel.SetActive(false);
         if (instructionsPanel != null)
         {
             instructionsPanel.SetActive(true);
@@ -40,6 +42,11 @@ public class GameUI : MonoBehaviour
         if (Input.GetKeyDown(settingsKey))
         {
             if (instructionsPanel != null && instructionsPanel.activeSelf) return;
+            if (controlsPanel != null && controlsPanel.activeSelf)
+            {
+                CloseControls();
+                return;
+            }
             ToggleSettings();
         }
     }
@@ -57,6 +64,19 @@ public class GameUI : MonoBehaviour
         settingsPanel.SetActive(open);
         Time.timeScale = open ? 0f : 1f;
         AudioListener.pause = open;
+    }
+
+    public void OpenControls()
+    {
+        if (controlsPanel == null) return;
+        if (settingsPanel != null) settingsPanel.SetActive(false);
+        controlsPanel.SetActive(true);
+    }
+
+    public void CloseControls()
+    {
+        if (controlsPanel != null) controlsPanel.SetActive(false);
+        if (settingsPanel != null) settingsPanel.SetActive(true);
     }
 
     public void Resume()
