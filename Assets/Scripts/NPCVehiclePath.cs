@@ -67,7 +67,14 @@ public class NPCVehiclePath : MonoBehaviour
         hornSource.minDistance = 5f;
         hornSource.maxDistance = hornMaxDistance;
         hornSource.volume = hornVolume;
-        nextHornDelay = Random.Range(hornReactionTime.x, hornReactionTime.y);
+        nextHornDelay = RollHornDelay();
+    }
+
+    // Scales the configured reaction time so cars honk sooner.
+    const float HornReactionScale = 0.4f;
+    float RollHornDelay()
+    {
+        return Random.Range(hornReactionTime.x, hornReactionTime.y) * HornReactionScale;
     }
 
     void UpdateHorn(bool obstructed)
@@ -77,7 +84,7 @@ public class NPCVehiclePath : MonoBehaviour
         if (!obstructed)
         {
             blockedTimer = 0f;
-            nextHornDelay = Random.Range(hornReactionTime.x, hornReactionTime.y);
+            nextHornDelay = RollHornDelay();
             return;
         }
 
@@ -92,7 +99,7 @@ public class NPCVehiclePath : MonoBehaviour
         hornSource.PlayOneShot(clip);
         hornCooldownTimer = Random.Range(hornCooldown.x, hornCooldown.y);
         blockedTimer = 0f;
-        nextHornDelay = Random.Range(hornReactionTime.x, hornReactionTime.y);
+        nextHornDelay = RollHornDelay();
     }
 
     void Start()

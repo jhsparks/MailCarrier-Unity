@@ -72,6 +72,7 @@ public class VehicleCollider : MonoBehaviour
 
         rb.isKinematic = false;
         rb.useGravity = true;
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
         rb.position += Vector3.up * liftOnKnock;
         rb.linearVelocity = velocity;
     }
@@ -91,10 +92,15 @@ public class VehicleCollider : MonoBehaviour
         }
         if (groundY == float.MinValue) return;
 
-        Collider col = GetComponentInChildren<Collider>();
-        if (col == null) return;
-
-        float bottom = col.bounds.min.y;
+        bool found = false;
+        float bottom = 0f;
+        foreach (Collider c in GetComponentsInChildren<Collider>())
+        {
+            if (c.isTrigger) continue;
+            if (!found || c.bounds.min.y < bottom) bottom = c.bounds.min.y;
+            found = true;
+        }
+        if (!found) return;
         if (bottom < groundY - 0.05f)
         {
             Vector3 p = rb.position;

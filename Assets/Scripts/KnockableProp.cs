@@ -22,12 +22,22 @@ public class KnockableProp : MonoBehaviour
         Rigidbody other = collision.rigidbody;
         if (other == null || other.GetComponent<DrivableVan>() == null) return;
 
+        MakeCollidersConvex();
         rb.isKinematic = false;
         rb.linearVelocity = other.linearVelocity * 0.5f;
     }
 
+    void MakeCollidersConvex()
+    {
+        foreach (MeshCollider mc in GetComponentsInChildren<MeshCollider>())
+        {
+            if (!mc.convex) mc.convex = true;
+        }
+    }
+
     public void Setup()
     {
+        MakeCollidersConvex();
         if (GetComponentInChildren<Collider>() == null)
         {
             MeshFilter[] meshes = GetComponentsInChildren<MeshFilter>();

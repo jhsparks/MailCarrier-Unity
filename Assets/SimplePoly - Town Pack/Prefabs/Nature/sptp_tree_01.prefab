@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264bd4d826b73d8499bc82774e20e4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KnockableProp
-  mass: 200
+  mass: 300
   drag: 0.5
   angularDrag: 0.5
 --- !u!54 &2233894654960101620
