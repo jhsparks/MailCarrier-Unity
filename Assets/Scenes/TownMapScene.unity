@@ -5269,7 +5269,7 @@ MonoBehaviour:
   doorDelivered: {fileID: 8300000, guid: 6b3321a7fcaaed145a457f7612ee777c, type: 3}
   pickupMail: {fileID: 8300000, guid: d8d711055194daa4ca9ec73c5d588178, type: 3}
   allMailDelivered: {fileID: 8300000, guid: be0c48bb698e21f44b7cca6098d2c977, type: 3}
-  musicVolume: 0.5
+  musicVolume: 0.3
   sfxVolume: 1
 --- !u!4 &151636374
 Transform:
@@ -62592,7 +62592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1687775741
 RectTransform:
   m_ObjectHideFlags: 0
