@@ -22,8 +22,6 @@ public class DrivableVan : MonoBehaviour
     public float maxStepHeight = 0.4f;
     public float stepSpeed = 2.5f;
     public float stepSmoothing = 12f;
-    public float stepHoldTime = 0.15f;
-    private float stepTimer;
     private float stepLift;
     public float stepCheckDistance = 0.4f;
     public float stepCheckWidth = 1f;
@@ -104,36 +102,36 @@ public class DrivableVan : MonoBehaviour
         }
     }
 
-    bool ShouldStepUp(Vector3 dir)
+    float GetStepHeight(Vector3 dir)
     {
-        if (vanCollider == null) return false;
+        if (vanCollider == null) return 0f;
 
         Bounds b = vanCollider.bounds;
         float reach = Mathf.Max(b.extents.x, b.extents.z) + stepCheckDistance;
-        float lowY = b.min.y + 0.08f;
-        float highY = b.min.y + maxStepHeight;
+        float bottom = b.min.y;
+        float startY = bottom + maxStepHeight + 0.3f;
         Vector3 right = transform.right;
+        float best = 0f;
 
         for (int i = -2; i <= 2; i++)
         {
-            Vector3 side = right * (stepCheckWidth * i * 0.5f);
-            Vector3 low = new Vector3(b.center.x, lowY, b.center.z) + side;
-            Vector3 high = new Vector3(b.center.x, highY, b.center.z) + side;
-
-            if (RayBlocked(low, dir, reach) && !RayBlocked(high, dir, reach)) return true;
+            Vector3 origin = new Vector3(b.center.x, startY, b.center.z) + dir * reach + right * (stepCheckWidth * i * 0.5f);
+            float h = GroundHeightAt(origin, startY - bottom + 0.1f) - bottom;
+            if (h > best) best = h;
         }
-        return false;
+        return best <= maxStepHeight ? best : 0f;
     }
 
-    bool RayBlocked(Vector3 origin, Vector3 dir, float distance)
+    float GroundHeightAt(Vector3 origin, float distance)
     {
-        RaycastHit[] hits = Physics.RaycastAll(origin, dir, distance, ~0, QueryTriggerInteraction.Ignore);
+        float topY = float.NegativeInfinity;
+        RaycastHit[] hits = Physics.RaycastAll(origin, Vector3.down, distance, ~0, QueryTriggerInteraction.Ignore);
         foreach (RaycastHit hit in hits)
         {
             if (hit.collider.transform.IsChildOf(transform)) continue;
-            return true;
+            if (hit.point.y > topY) topY = hit.point.y;
         }
-        return false;
+        return topY;
     }
 
     void FixedUpdate()
@@ -143,16 +141,14 @@ public class DrivableVan : MonoBehaviour
         // Move vehicle using velocity to allow clean physics interaction
         Vector3 targetVelocity = transform.forward * moveInput * driveSpeed;
         targetVelocity.y = rb.linearVelocity.y; // Preserve gravity
-        if (Mathf.Abs(moveInput) > 0.1f && ShouldStepUp(transform.forward * Mathf.Sign(moveInput)))
+        float stepHeight = 0f;
+        if (Mathf.Abs(moveInput) > 0.1f)
         {
-            stepTimer = stepHoldTime;
-        }
-        else
-        {
-            stepTimer -= Time.fixedDeltaTime;
+            stepHeight = GetStepHeight(transform.forward * Mathf.Sign(moveInput));
         }
 
-        stepLift = Mathf.MoveTowards(stepLift, stepTimer > 0f ? stepSpeed : 0f, stepSmoothing * Time.fixedDeltaTime);
+        float desiredLift = stepHeight > 0.02f ? Mathf.Clamp(stepHeight * stepSmoothing, 0f, stepSpeed) : 0f;
+        stepLift = Mathf.MoveTowards(stepLift, desiredLift, stepSmoothing * 2f * Time.fixedDeltaTime);
         if (stepLift > 0.01f)
         {
             targetVelocity.y = Mathf.Max(targetVelocity.y, stepLift);
