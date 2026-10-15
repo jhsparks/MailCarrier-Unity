@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1854482904674943789}
   - component: {fileID: 6372057288754681051}
   - component: {fileID: -390678165519709877}
+  - component: {fileID: 6866895188783043425}
   m_Layer: 0
   m_Name: car-3
   m_TagString: Untagged
@@ -57,8 +58,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.7, y: 1, z: 3.8}
+  m_Center: {x: 0, y: 0.6, z: 0.2}
 --- !u!54 &-390678165519709877
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -67,9 +68,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063203058504410888}
   serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_Mass: 1500
+  m_LinearDamping: 0.3
+  m_AngularDamping: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -85,7 +86,25 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 10
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &6866895188783043425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063203058504410888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
+  mass: 1500
+  drag: 0.3
+  angularDrag: 1
+  inheritedVelocity: 0.7
+  liftOnKnock: 0.1
+  recoverDelay: 4
 --- !u!1 &2518464801325850086
 GameObject:
   m_ObjectHideFlags: 0

@@ -84,7 +84,7 @@ public class MissionIndicators : MonoBehaviour
         if (gm.mailCarried == 0 && gm.mailDelivered == 0) vanHintDone = false;
         if (driving) vanHintDone = true;
 
-        UpdateSign(postOfficeSign, canPickUp && !driving);
+        UpdateSign(postOfficeSign, canPickUp);
         UpdateSign(vanSign, gm.mailCarried > 0 && !vanHintDone);
     }
 

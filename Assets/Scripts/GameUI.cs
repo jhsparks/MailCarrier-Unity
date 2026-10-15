@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
 {
     public GameObject instructionsPanel;
     public GameObject settingsPanel;
     public GameObject controlsPanel;
+    public Slider musicSlider;
+    public Slider sfxSlider;
     public GameObject playerCharacter;
     public DrivableVan van;
     public KeyCode settingsKey = KeyCode.Escape;
@@ -26,6 +29,17 @@ public class GameUI : MonoBehaviour
         {
             vanStartPos = van.transform.position;
             vanStartRot = van.transform.rotation;
+        }
+
+        if (musicSlider != null)
+        {
+            musicSlider.SetValueWithoutNotify(PlayerPrefs.GetFloat("MusicVolume", 0.4f));
+            musicSlider.onValueChanged.AddListener(AudioManager.SetMusicVolume);
+        }
+        if (sfxSlider != null)
+        {
+            sfxSlider.SetValueWithoutNotify(PlayerPrefs.GetFloat("SfxVolume", 1f));
+            sfxSlider.onValueChanged.AddListener(AudioManager.SetSfxVolume);
         }
 
         if (settingsPanel != null) settingsPanel.SetActive(false);

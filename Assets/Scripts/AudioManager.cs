@@ -35,8 +35,27 @@ public class AudioManager : MonoBehaviour
         sfxSource.spatialBlend = 0f;
     }
 
+    public static void SetMusicVolume(float v)
+    {
+        v = Mathf.Clamp01(v);
+        PlayerPrefs.SetFloat("MusicVolume", v);
+        if (Instance == null) return;
+        Instance.musicVolume = v;
+        Instance.musicSource.volume = v;
+    }
+
+    public static void SetSfxVolume(float v)
+    {
+        v = Mathf.Clamp01(v);
+        PlayerPrefs.SetFloat("SfxVolume", v);
+        if (Instance != null) Instance.sfxVolume = v;
+    }
+
     void Start()
     {
+        musicVolume = PlayerPrefs.GetFloat("MusicVolume", musicVolume);
+        sfxVolume = PlayerPrefs.GetFloat("SfxVolume", sfxVolume);
+        musicSource.volume = musicVolume;
         if (backgroundMusic != null)
         {
             musicSource.clip = backgroundMusic;
