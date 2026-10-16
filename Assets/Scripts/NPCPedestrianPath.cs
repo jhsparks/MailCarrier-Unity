@@ -6,10 +6,14 @@ public class NPCPedestrianPath : MonoBehaviour
     public Transform[] sidewalkRoutes;
     public float walkSpeed = 3f;
     public float rotationSpeed = 6f;
-    public float speedVariation = 0.3f;
+    public float speedVariation = 0.45f;
+    public float lateralVariation = 0.8f;
     public float personalSpace = 1.2f;
 
+    private float lateralOffset;
+
     private static readonly List<NPCPedestrianPath> all = new List<NPCPedestrianPath>();
+    public static IReadOnlyList<NPCPedestrianPath> All { get { return all; } }
 
     private Transform[] currentWaypoints;
     private int currentWaypointIndex = 0;
@@ -60,6 +64,10 @@ public class NPCPedestrianPath : MonoBehaviour
         {
             currentWaypoints[i] = selectedRoute.GetChild(i);
         }
+        if (Random.value < 0.5f) System.Array.Reverse(currentWaypoints);
+
+        speedMultiplier = 1f + Random.Range(-speedVariation, speedVariation);
+        lateralOffset = Random.Range(-lateralVariation, lateralVariation);
 
         currentWaypointIndex = 0;
         if (currentWaypoints.Length == 0) return;
@@ -100,6 +108,12 @@ public class NPCPedestrianPath : MonoBehaviour
 
         Transform targetNode = currentWaypoints[currentWaypointIndex];
         Vector3 targetPosition = new Vector3(targetNode.position.x, transform.position.y, targetNode.position.z);
+        Vector3 toNode = targetPosition - transform.position;
+        toNode.y = 0f;
+        if (toNode.sqrMagnitude > 1f)
+        {
+            targetPosition += Vector3.Cross(Vector3.up, toNode.normalized) * lateralOffset;
+        }
 
         float speed = walkSpeed * speedMultiplier;
         Vector3 push = Vector3.zero;

@@ -162,6 +162,7 @@ public class GameManager : MonoBehaviour
     {
         if (phase != Phase.Collect || !AllMailboxesCollected) return false;
         phase = Phase.Done;
+        Debug.Log("[GameManager] All mail returned to HQ. Day complete.");
         AudioManager.PlayAllMailDelivered();
         dayCompleted?.Invoke();
         return true;

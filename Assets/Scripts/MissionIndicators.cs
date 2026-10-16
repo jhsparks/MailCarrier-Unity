@@ -19,6 +19,7 @@ public class MissionIndicators : MonoBehaviour
 
     Sign postOfficeSign;
     Sign vanSign;
+    Sign returnSign;
     DrivableVan van;
     Camera cam;
 
@@ -48,7 +49,10 @@ public class MissionIndicators : MonoBehaviour
         van = FindFirstObjectByType<DrivableVan>();
 
         if (hq != null)
+        {
             postOfficeSign = CreateSign("PostOfficeSign", "PICK UP MAIL", hq.transform, new Color(1f, 0.85f, 0.1f), postOfficeHeight);
+            returnSign = CreateSign("ReturnSign", "RETURN TO POST OFFICE", hq.transform, new Color(1f, 0.85f, 0.1f), postOfficeHeight);
+        }
         if (van != null)
             vanSign = CreateSign("VanSign", "GET IN VAN", van.transform, new Color(0.3f, 1f, 0.4f), vanHeight);
     }
@@ -84,7 +88,8 @@ public class MissionIndicators : MonoBehaviour
         if (gm.mailCarried == 0 && gm.mailDelivered == 0) vanHintDone = false;
         if (driving) vanHintDone = true;
 
-        UpdateSign(postOfficeSign, canPickUp);
+        UpdateSign(postOfficeSign, canPickUp && gm.phase == GameManager.Phase.Deliver);
+        UpdateSign(returnSign, gm.phase == GameManager.Phase.Collect && gm.AllMailboxesCollected);
         UpdateSign(vanSign, gm.mailCarried > 0 && !vanHintDone);
     }
 

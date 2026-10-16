@@ -21787,7 +21787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Size.y
-      value: 1.1
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Size.z
@@ -21799,7 +21799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Center.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Center.z
@@ -26045,6 +26045,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.z
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.z
+      value: -0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Mass
       value: 1500
@@ -26714,6 +26730,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.z
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.z
+      value: -0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Mass
       value: 1500
@@ -34817,11 +34849,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 465408, guid: 2735bdfa72e806248aafddd7a7ab3177, type: 3}
   m_PrefabInstance: {fileID: 887488370}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &887569796 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
-  m_PrefabInstance: {fileID: 1803923258}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &888816231
 GameObject:
   m_ObjectHideFlags: 0
@@ -37970,7 +37997,7 @@ MonoBehaviour:
     1.  Pick up Mail at the Post
     Office
 
-    2.  Deliver Mail to buildings with Stars'
+    2.  Deliver Mail to starred buildings'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -42793,7 +42820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1103170117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63953,6 +63980,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.z
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.z
+      value: -0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Mass
       value: 1500
@@ -70430,6 +70477,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Size.z
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
+      propertyPath: m_Center.z
+      value: -0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2691083182927040267, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Mass
       value: 1500
@@ -72883,26 +72946,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1308963005}
     m_Modifications:
-    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
-      propertyPath: m_Mass
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
-      propertyPath: m_Interpolate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
-      propertyPath: m_LinearDamping
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
-      propertyPath: m_AngularDamping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -3357597974531432229, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.30269
@@ -72950,34 +72993,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6873862999140894732, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1803923262}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
 --- !u!4 &1803923259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1802250114665688157, guid: b4bbe3b60b9a93e43bcfdb09670b78ff, type: 3}
   m_PrefabInstance: {fileID: 1803923258}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1803923262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 887569796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d5975cac9038fb4e9305f8836577b3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VehicleCollider
-  mass: 1500
-  drag: 0.3
-  angularDrag: 1
-  inheritedVelocity: 0.7
-  liftOnKnock: 0.1
-  recoverDelay: 4
 --- !u!1 &1806944014
 GameObject:
   m_ObjectHideFlags: 0
@@ -74879,7 +74901,7 @@ MonoBehaviour:
     2. 
     Deliver Mail to the Post Office
 
-    3.  Once delivered, game complete'
+    3.  Once delivered, game complete!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

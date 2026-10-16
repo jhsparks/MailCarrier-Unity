@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCVehiclePath : MonoBehaviour
@@ -20,6 +21,7 @@ public class NPCVehiclePath : MonoBehaviour
     [Tooltip("Horn clips. If empty, Resources/Horns/car horn 1 and car horn 2 are used.")]
     public AudioClip[] hornClips;
     [Range(0f, 1f)] public float hornVolume = 0.7f;
+    [Range(0f, 1f)] public float hornVolumeScale = 0.3f;
     public float hornMaxDistance = 45f;
     [Tooltip("Seconds blocked before the first honk (min, max).")]
     public Vector2 hornReactionTime = new Vector2(1f, 3f);
@@ -66,7 +68,7 @@ public class NPCVehiclePath : MonoBehaviour
         hornSource.rolloffMode = AudioRolloffMode.Linear;
         hornSource.minDistance = 5f;
         hornSource.maxDistance = hornMaxDistance;
-        hornSource.volume = hornVolume;
+        hornSource.volume = hornVolume * hornVolumeScale;
         nextHornDelay = RollHornDelay();
     }
 
@@ -75,6 +77,18 @@ public class NPCVehiclePath : MonoBehaviour
     float RollHornDelay()
     {
         return Random.Range(hornReactionTime.x, hornReactionTime.y) * HornReactionScale;
+    }
+
+    // Only honk when the car is in front of the camera and reasonably close,
+    // so honks from unseen cars (behind buildings or the camera) are not heard.
+    bool IsHornAudible()
+    {
+        Camera cam = Camera.main;
+        if (cam == null) return true;
+
+        Vector3 vp = cam.WorldToViewportPoint(transform.position);
+        if (vp.z <= 0f || vp.x < -0.1f || vp.x > 1.1f || vp.y < -0.1f || vp.y > 1.1f) return false;
+        return vp.z <= 35f;
     }
 
     void UpdateHorn(bool obstructed)
@@ -91,6 +105,7 @@ public class NPCVehiclePath : MonoBehaviour
         blockedTimer += Time.deltaTime;
         if (blockedTimer < nextHornDelay || hornCooldownTimer > 0f) return;
         if (hornSource == null || hornSource.isPlaying) return;
+        if (!IsHornAudible()) return;
 
         AudioClip clip = hornClips[Random.Range(0, hornClips.Length)];
         if (clip == null) return;
@@ -184,6 +199,39 @@ public class NPCVehiclePath : MonoBehaviour
 
     public bool IsWrecked { get; private set; }
 
+    [Header("Pedestrian yielding")]
+    public float pedestrianStopDistance = 3.5f;
+    public float pedestrianSlowDistance = 8f;
+    public float pedestrianHalfWidth = 2.2f;
+
+    float PedestrianClearSpeed(Vector3 direction)
+    {
+        Vector3 right = Vector3.Cross(Vector3.up, direction);
+        float result = cruiseSpeed;
+        IReadOnlyList<NPCPedestrianPath> peds = NPCPedestrianPath.All;
+        for (int i = 0; i < peds.Count; i++)
+        {
+            result = Mathf.Min(result, SpeedForWalker(peds[i].transform.position, direction, right));
+        }
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null && player.activeInHierarchy)
+        {
+            result = Mathf.Min(result, SpeedForWalker(player.transform.position, direction, right));
+        }
+        return result;
+    }
+
+    float SpeedForWalker(Vector3 walkerPos, Vector3 direction, Vector3 right)
+    {
+        Vector3 v = walkerPos - transform.position;
+        v.y = 0f;
+        float along = Vector3.Dot(v, direction);
+        float lateral = Mathf.Abs(Vector3.Dot(v, right));
+        if (along <= 0f || along > pedestrianSlowDistance || lateral > pedestrianHalfWidth) return cruiseSpeed;
+        if (along <= pedestrianStopDistance) return 0f;
+        return cruiseSpeed * Mathf.Clamp01((along - pedestrianStopDistance) / (pedestrianSlowDistance - pedestrianStopDistance));
+    }
+
     public void SetWrecked(bool wrecked)
     {
         IsWrecked = wrecked;
@@ -268,8 +316,20 @@ public class NPCVehiclePath : MonoBehaviour
             }
         }
 
+        // LAYER 3: wait for pedestrians (and the on-foot player) crossing ahead.
+        bool yieldingToPed = false;
+        if (direction != Vector3.zero && desiredSpeed > 0f)
+        {
+            float pedSpeed = PedestrianClearSpeed(direction);
+            if (pedSpeed < desiredSpeed)
+            {
+                desiredSpeed = pedSpeed;
+                yieldingToPed = true;
+            }
+        }
+
         // Ease toward the desired speed for smooth braking / accelerating.
-        UpdateHorn(desiredSpeed < cruiseSpeed * 0.3f && currentSpeed < cruiseSpeed * 0.5f);
+        UpdateHorn(!yieldingToPed && desiredSpeed < cruiseSpeed * 0.3f && currentSpeed < cruiseSpeed * 0.5f);
         currentSpeed = Mathf.MoveTowards(currentSpeed, desiredSpeed, 20f * Time.deltaTime);
 
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, currentSpeed * Time.deltaTime);

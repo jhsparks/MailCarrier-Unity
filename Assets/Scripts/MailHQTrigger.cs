@@ -9,6 +9,7 @@ public class MailHQTrigger : MonoBehaviour
         if (playerInRange && Input.GetKeyDown(KeyCode.Space))
         {
             if (GameManager.Instance == null) return;
+            Debug.Log($"[MailHQTrigger] Space pressed at HQ. Phase={GameManager.Instance.phase}, collected={GameManager.Instance.mailboxesCollected}/{GameManager.Instance.mailboxesTotal}");
             if (GameManager.Instance.phase == GameManager.Phase.Collect) GameManager.Instance.ReturnMailToHQ();
             else GameManager.Instance.PickUpMail();
         }
@@ -16,11 +17,16 @@ public class MailHQTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) playerInRange = true;
+        if (IsActor(other)) playerInRange = true;
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player")) playerInRange = false;
+        if (IsActor(other)) playerInRange = false;
+    }
+
+    static bool IsActor(Collider other)
+    {
+        return other.CompareTag("Player") || other.GetComponentInParent<DrivableVan>() != null;
     }
 }
