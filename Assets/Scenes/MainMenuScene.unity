@@ -729,6 +729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968dc5b91be747b47a52b75f9f47fb9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  menuMusic: {fileID: 8300000, guid: 783d6d8fc54582f4ba21f7ea844bb4f4, type: 3}
+  musicVolume: 0.5
 --- !u!4 &792323640
 Transform:
   m_ObjectHideFlags: 0
