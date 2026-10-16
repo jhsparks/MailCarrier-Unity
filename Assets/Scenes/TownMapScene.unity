@@ -3845,6 +3845,154 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 467192, guid: 52e3c281ef0f0ea4985188d26644edcb, type: 3}
   m_PrefabInstance: {fileID: 84426456}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &88118683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 88118684}
+  - component: {fileID: 88118686}
+  - component: {fileID: 88118685}
+  m_Layer: 5
+  m_Name: Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &88118684
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88118683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1242707766}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 65.16043, y: 22.646309}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &88118685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88118683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Move / Drive
+
+    Sprint
+
+    Pick up & deliver mail
+
+    Enter / Exit
+    van
+
+    Honk horn
+
+    Pause'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &88118686
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88118683}
+  m_CullTransparentMesh: 1
 --- !u!1 &88405787
 GameObject:
   m_ObjectHideFlags: 0
@@ -7791,6 +7939,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1 &181375290
 GameObject:
@@ -10329,6 +10478,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1001 &260237020
 PrefabInstance:
@@ -13477,6 +13627,9 @@ MonoBehaviour:
   currentTarget: {fileID: 1408736471}
   offset: {x: 0, y: 4, z: -7}
   followSpeed: 5
+  yawFollowSpeed: 4
+  playerYawFollowSpeed: 5
+  walkBackAngle: 100
 --- !u!1001 &338299484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13644,6 +13797,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1 &340397372
 GameObject:
@@ -16390,6 +16544,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1001 &403753545
 PrefabInstance:
@@ -21787,7 +21942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Size.y
-      value: 1.7
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: -6207634314117257528, guid: d066dda1ee1eb43498afb10da08eaac0, type: 3}
       propertyPath: m_Size.z
@@ -32200,6 +32355,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1 &815720681 stripped
 GameObject:
@@ -34909,6 +35065,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1001 &893441942
 PrefabInstance:
@@ -37629,6 +37786,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1001 &959197048
 PrefabInstance:
@@ -48415,6 +48573,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1001 &1229786845
 PrefabInstance:
@@ -49447,6 +49606,7 @@ RectTransform:
   - {fileID: 1514845431}
   - {fileID: 1327984880}
   - {fileID: 1285848314}
+  - {fileID: 88118684}
   - {fileID: 219841990}
   - {fileID: 1773981524}
   - {fileID: 362586099}
@@ -51322,17 +51482,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'W A S D            Move / Drive
+  m_text: 'W A S D
 
-    Space               Pick up & deliver
-    mail
+    Shift
 
-    E                      Enter / Exit van
+    Space
 
-    H                     
-    Honk horn
+    E
 
-    Esc                   Pause'
+    H
+
+    Esc'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -56422,6 +56582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController3D
   moveSpeed: 6
+  runSpeed: 12
+  runKey: 304
   turnSpeed: 3
   cameraTransform: {fileID: 0}
   animator: {fileID: 0}
@@ -60656,6 +60818,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1001 &1522979241
 PrefabInstance:
@@ -64354,6 +64517,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1001 &1601685604
 PrefabInstance:
@@ -67539,7 +67703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1687775741
 RectTransform:
   m_ObjectHideFlags: 0
@@ -77991,6 +78155,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1001 &1935682819
 PrefabInstance:
@@ -80926,6 +81091,7 @@ MonoBehaviour:
   walkSpeed: 3
   rotationSpeed: 6
   speedVariation: 0.3
+  lateralVariation: 0.8
   personalSpace: 1.2
 --- !u!1001 &2015104497
 PrefabInstance:

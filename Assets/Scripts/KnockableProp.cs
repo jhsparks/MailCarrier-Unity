@@ -35,6 +35,32 @@ public class KnockableProp : MonoBehaviour
         }
     }
 
+    // Props whose only collider is a trigger (e.g. traffic lights) let the van
+    // and player walk straight through, so give them a solid capsule.
+    void EnsureSolidCollider()
+    {
+        foreach (Collider c in GetComponentsInChildren<Collider>())
+        {
+            if (c.enabled && !c.isTrigger) return;
+        }
+
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        if (renderers.Length == 0) return;
+
+        Bounds b = renderers[0].bounds;
+        for (int i = 1; i < renderers.Length; i++) b.Encapsulate(renderers[i].bounds);
+
+        Vector3 scale = transform.lossyScale;
+        float sy = Mathf.Max(0.0001f, Mathf.Abs(scale.y));
+        float sxz = Mathf.Max(0.0001f, Mathf.Max(Mathf.Abs(scale.x), Mathf.Abs(scale.z)));
+
+        CapsuleCollider cap = gameObject.AddComponent<CapsuleCollider>();
+        cap.direction = 1;
+        cap.radius = Mathf.Min(0.4f, Mathf.Min(b.extents.x, b.extents.z)) / sxz;
+        cap.height = b.size.y / sy;
+        cap.center = transform.InverseTransformPoint(b.center);
+    }
+
     public void Setup()
     {
         MakeCollidersConvex();
@@ -54,6 +80,7 @@ public class KnockableProp : MonoBehaviour
 
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb == null) rb = gameObject.AddComponent<Rigidbody>();
+        EnsureSolidCollider();
         rb.mass = mass;
         rb.linearDamping = drag;
         rb.angularDamping = angularDrag;

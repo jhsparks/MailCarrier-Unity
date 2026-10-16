@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerController3D : MonoBehaviour
 {
     public float moveSpeed = 6f;
+    public float runSpeed = 10f;
+    public KeyCode runKey = KeyCode.LeftShift;
     public float turnSpeed = 12f;
     public Transform cameraTransform;
     public Animator animator;
@@ -25,10 +27,12 @@ public class PlayerController3D : MonoBehaviour
         float moveZ = Input.GetAxisRaw("Vertical");
         Vector3 input = new Vector3(moveX, 0f, moveZ).normalized;
 
-        // Drive the Idle/Walk animation transition
+        bool running = Input.GetKey(runKey) && input.magnitude >= 0.1f;
+
+        // Drive the Idle/Walk/Run animation transitions (Speed: 1 = walk, 2 = run)
         if (animator != null)
         {
-            animator.SetFloat("Speed", input.magnitude);
+            animator.SetFloat("Speed", input.magnitude * (running ? 2f : 1f));
         }
 
         Vector3 moveDir = Vector3.zero;
@@ -46,7 +50,7 @@ public class PlayerController3D : MonoBehaviour
 
         verticalVelocity += Physics.gravity.y * Time.deltaTime;
 
-        Vector3 motion = moveDir.normalized * moveSpeed; // horizontal
+        Vector3 motion = moveDir.normalized * (running ? runSpeed : moveSpeed); // horizontal
         motion.y = verticalVelocity;
         controller.Move(motion * Time.deltaTime);
     }
