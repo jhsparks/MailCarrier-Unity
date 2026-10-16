@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class GameUI : MonoBehaviour
 {
     public GameObject instructionsPanel;
+    public GameObject instructionsPanel2;
     public GameObject settingsPanel;
     public GameObject controlsPanel;
     public Slider musicSlider;
@@ -44,6 +45,7 @@ public class GameUI : MonoBehaviour
 
         if (settingsPanel != null) settingsPanel.SetActive(false);
         if (controlsPanel != null) controlsPanel.SetActive(false);
+        if (instructionsPanel2 != null) instructionsPanel2.SetActive(false);
         if (instructionsPanel != null)
         {
             instructionsPanel.SetActive(true);
@@ -51,11 +53,30 @@ public class GameUI : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        GameManager.phaseChanged += OnPhaseChanged;
+    }
+
+    void OnDisable()
+    {
+        GameManager.phaseChanged -= OnPhaseChanged;
+    }
+
+    void OnPhaseChanged()
+    {
+        if (GameManager.Instance == null || GameManager.Instance.phase != GameManager.Phase.Collect) return;
+        if (instructionsPanel2 == null) return;
+        instructionsPanel2.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(settingsKey))
         {
             if (instructionsPanel != null && instructionsPanel.activeSelf) return;
+            if (instructionsPanel2 != null && instructionsPanel2.activeSelf) return;
             if (controlsPanel != null && controlsPanel.activeSelf)
             {
                 CloseControls();
@@ -68,6 +89,7 @@ public class GameUI : MonoBehaviour
     public void CloseInstructions()
     {
         if (instructionsPanel != null) instructionsPanel.SetActive(false);
+        if (instructionsPanel2 != null) instructionsPanel2.SetActive(false);
         Time.timeScale = 1f;
     }
 

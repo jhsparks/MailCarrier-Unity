@@ -8,7 +8,9 @@ public class MailHQTrigger : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.Space))
         {
-            if (GameManager.Instance != null) GameManager.Instance.PickUpMail();
+            if (GameManager.Instance == null) return;
+            if (GameManager.Instance.phase == GameManager.Phase.Collect) GameManager.Instance.ReturnMailToHQ();
+            else GameManager.Instance.PickUpMail();
         }
     }
 

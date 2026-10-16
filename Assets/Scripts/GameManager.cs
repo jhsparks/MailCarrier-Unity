@@ -9,6 +9,14 @@ public class GameManager : MonoBehaviour
     public int mailDelivered = 0;
     public int dailyTargetCount = 15;
 
+    public enum Phase { Deliver, Collect, Done }
+    public Phase phase = Phase.Deliver;
+    public int mailboxesTotal = 0;
+    public int mailboxesCollected = 0;
+    public bool AllMailboxesCollected { get { return mailboxesTotal > 0 && mailboxesCollected >= mailboxesTotal; } }
+
+    public static event System.Action phaseChanged;
+
     public delegate void OnMailChanged(int carried, int total);
     public static event OnMailChanged mailUpdated;
 
@@ -42,6 +50,9 @@ public class GameManager : MonoBehaviour
     {
         mailCarried = 0;
         mailDelivered = 0;
+        phase = Phase.Deliver;
+        mailboxesTotal = 0;
+        mailboxesCollected = 0;
 
         GameObject[] allDoorObjects = GameObject.FindGameObjectsWithTag("DeliveryDoor");
         List<DoorTrigger3D> allTriggers = new List<DoorTrigger3D>();
@@ -88,6 +99,7 @@ public class GameManager : MonoBehaviour
 
     public bool PickUpMail()
     {
+        if (phase != Phase.Deliver) return false;
         int remaining = dailyTargetCount - mailDelivered;
         if (mailCarried >= remaining) return false;
 
@@ -108,7 +120,7 @@ public class GameManager : MonoBehaviour
             if (mailDelivered >= dailyTargetCount)
             {
                 AudioManager.PlayAllMailDelivered();
-                dayCompleted?.Invoke();
+                BeginCollectPhase();
             }
             else
             {
@@ -117,5 +129,41 @@ public class GameManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    void BeginCollectPhase()
+    {
+        MailboxCollector collector = gameObject.AddComponent<MailboxCollector>();
+        mailboxesTotal = collector.Init();
+        mailboxesCollected = 0;
+
+        if (mailboxesTotal == 0)
+        {
+            Destroy(collector);
+            phase = Phase.Done;
+            dayCompleted?.Invoke();
+            return;
+        }
+
+        phase = Phase.Collect;
+        mailUpdated?.Invoke(0, mailboxesTotal);
+        phaseChanged?.Invoke();
+    }
+
+    public void CollectMailbox()
+    {
+        if (phase != Phase.Collect) return;
+        mailboxesCollected++;
+        mailUpdated?.Invoke(mailboxesCollected, mailboxesTotal);
+        AudioManager.PlayPickupMail();
+    }
+
+    public bool ReturnMailToHQ()
+    {
+        if (phase != Phase.Collect || !AllMailboxesCollected) return false;
+        phase = Phase.Done;
+        AudioManager.PlayAllMailDelivered();
+        dayCompleted?.Invoke();
+        return true;
     }
 }
