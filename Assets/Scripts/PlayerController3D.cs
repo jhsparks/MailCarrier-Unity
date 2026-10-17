@@ -8,6 +8,7 @@ public class PlayerController3D : MonoBehaviour
     public float turnSpeed = 12f;
     public Transform cameraTransform;
     public Animator animator;
+    [HideInInspector] public int slot = -1;
     private CharacterController controller;
     private float verticalVelocity;
 
@@ -23,12 +24,11 @@ public class PlayerController3D : MonoBehaviour
 
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveZ = Input.GetAxisRaw("Vertical");
+        float moveX = slot >= 0 ? PlayerInput.Horizontal(slot) : Input.GetAxisRaw("Horizontal");
+        float moveZ = slot >= 0 ? PlayerInput.Vertical(slot) : Input.GetAxisRaw("Vertical");
         Vector3 input = new Vector3(moveX, 0f, moveZ).normalized;
 
-        bool running = Input.GetKey(runKey) && input.magnitude >= 0.1f;
-
+        bool running = (slot >= 0 ? PlayerInput.Run(slot) : Input.GetKey(runKey)) && input.magnitude >= 0.1f;
         // Drive the Idle/Walk/Run animation transitions (Speed: 1 = walk, 2 = run)
         if (animator != null)
         {

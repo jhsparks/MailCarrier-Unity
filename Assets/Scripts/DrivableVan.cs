@@ -5,6 +5,7 @@ public class DrivableVan : MonoBehaviour
     public float driveSpeed = 14f;
     public float turnSpeed = 70f;
     public bool isBeingDriven = false;
+    [HideInInspector] public int slot = -1;
     public AudioClip vanSound;
     [Range(0f, 1f)] public float vanVolume = 0.6f;
     [Range(0f, 1f)] public float idleVolume = 0.3f;
@@ -66,14 +67,15 @@ public class DrivableVan : MonoBehaviour
 
         if (!isBeingDriven) return;
 
-        if (Input.GetKeyDown(hornKey) && hornClip != null && hornAudio != null)
+        bool hornPressed = slot >= 0 ? PlayerInput.HornDown(slot) : Input.GetKeyDown(hornKey);
+        if (hornPressed && hornClip != null && hornAudio != null)
         {
             hornAudio.PlayOneShot(hornClip);
         }
 
         // Read user inputs
-        moveInput = Input.GetAxis("Vertical");
-        turnInput = Input.GetAxis("Horizontal");
+        moveInput = slot >= 0 ? PlayerInput.Vertical(slot) : Input.GetAxis("Vertical");
+        turnInput = slot >= 0 ? PlayerInput.Horizontal(slot) : Input.GetAxis("Horizontal");
     }
 
     void UpdateVanSound()

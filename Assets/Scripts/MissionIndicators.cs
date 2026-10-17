@@ -38,6 +38,7 @@ public class MissionIndicators : MonoBehaviour
 
     static void AutoCreate()
     {
+        if (MultiplayerSession.Active) return;
         if (FindFirstObjectByType<MailHQTrigger>() == null) return;
         if (FindFirstObjectByType<MissionIndicators>() != null) return;
         new GameObject("MissionIndicators").AddComponent<MissionIndicators>();

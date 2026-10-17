@@ -6,6 +6,7 @@ public class MailHQTrigger : MonoBehaviour
 
     void Update()
     {
+        if (MultiplayerSession.Active) return;
         if (playerInRange && Input.GetKeyDown(KeyCode.Space))
         {
             if (GameManager.Instance == null) return;

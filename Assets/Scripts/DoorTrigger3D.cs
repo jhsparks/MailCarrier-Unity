@@ -40,10 +40,18 @@ public class DoorTrigger3D : MonoBehaviour
         Debug.Log($"[DoorTrigger3D] Activated {name} (indicator: {(deliveryIndicator != null ? deliveryIndicator.name : "none")})", this);
     }
 
+    public bool IsTarget { get { return isTargetForToday; } }
+
+    public void MarkDelivered()
+    {
+        hasDelivered = true;
+    }
+
     void Update()
     {
-        if (isTargetForToday && playerInRange && !hasDelivered && Input.GetKeyDown(KeyCode.Space))
-        {
+        if (MultiplayerSession.Active) return;
+        Input.GetKeyDown(KeyCode.Space))
+                {
             if (GameManager.Instance.DeliverMail())
             {
                 hasDelivered = true;

@@ -7,18 +7,41 @@ public static class PlayerAndVanDecorator
     static readonly Color32 BodyColor = new Color32(79, 86, 90, 255);
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    static void Init()
+    {
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+        Decorate();
+    }
+
+    static void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+    {
+        Decorate();
+    }
+
     static void Decorate()
     {
-        foreach (PlayerController3D player in Object.FindObjectsByType<PlayerController3D>(FindObjectsSortMode.None))
+        // In multiplayer the RaceManager decorates each player and van with its own color.
+        if (!MultiplayerSession.Active)
         {
-            AddSatchel(player);
-            if (player.GetComponent<PushRigidbodies>() == null) player.gameObject.AddComponent<PushRigidbodies>();
+            foreach (PlayerController3D player in Object.FindObjectsByType<PlayerController3D>(FindObjectsSortMode.None))
+            {
+                AddSatchel(player, new Color(0.04f, 0.04f, 0.04f));
+                if (player.GetComponent<PushRigidbodies>() == null) player.gameObject.AddComponent<PushRigidbodies>();
+            }
+
+            foreach (DrivableVan van in Object.FindObjectsByType<DrivableVan>(FindObjectsSortMode.None))
+                PaintVan(van, Color.white, new Color(0.05f, 0.2f, 0.85f));
         }
 
-        foreach (DrivableVan van in Object.FindObjectsByType<DrivableVan>(FindObjectsSortMode.None))
-            PaintVan(van);
-
         AddHydrantColliders();
+    }
+
+    public static void DecoratePlayer(PlayerController3D player, Color color, string avatarResource)
+    {
+        ApplyAvatar(player, avatarResource);
+        AddSatchel(player, color);
+        if (player.GetComponent<PushRigidbodies>() == null) player.gameObject.AddComponent<PushRigidbodies>();
     }
 
     static void AddHydrantColliders()
@@ -69,7 +92,42 @@ public static class PlayerAndVanDecorator
         return go;
     }
 
-    static void AddSatchel(PlayerController3D player)
+    static void ApplyAvatar(PlayerController3D player, string avatarResource)
+    {
+        if (player.transform.Find("PlayerAvatar") != null) return;
+        GameObject prefab = Resources.Load<GameObject>(avatarResource);
+        if (prefab == null) return;
+
+        Animator old = player.animator != null ? player.animator : player.GetComponentInChildren<Animator>();
+        bool oldIsChild = old != null && old.gameObject != player.gameObject;
+        Renderer[] oldRenderers = oldIsChild ? null : player.GetComponentsInChildren<Renderer>();
+
+        GameObject inst = Object.Instantiate(prefab, player.transform);
+        inst.name = "PlayerAvatar";
+        if (oldIsChild)
+        {
+            inst.transform.localPosition = old.transform.localPosition;
+            inst.transform.localRotation = old.transform.localRotation;
+            inst.transform.localScale = old.transform.localScale;
+            old.gameObject.SetActive(false);
+        }
+        else if (oldRenderers != null)
+        {
+            foreach (Renderer r in oldRenderers) r.enabled = false;
+            inst.transform.localPosition = Vector3.zero;
+            inst.transform.localRotation = Quaternion.identity;
+        }
+
+        Animator na = inst.GetComponentInChildren<Animator>();
+        if (na != null)
+        {
+            if (old != null) na.runtimeAnimatorController = old.runtimeAnimatorController;
+            na.applyRootMotion = false;
+            player.animator = na;
+        }
+    }
+
+    static void AddSatchel(PlayerController3D player, Color satchelColor)
     {
         Animator animator = player.animator != null ? player.animator : player.GetComponentInChildren<Animator>();
         Transform chest = null, hips = null;
@@ -83,7 +141,7 @@ public static class PlayerAndVanDecorator
         if (hips == null) hips = chest;
 
         Transform root = player.transform;
-        Material black = MakeMaterial(new Color(0.04f, 0.04f, 0.04f));
+        Material black = MakeMaterial(satchelColor);
 
         // Bag rests on the right hip; strap runs from the left shoulder across the chest to the bag.
         Vector3 bagPos = hips.position - root.up * 0.22f + root.right * 0.22f;
@@ -109,7 +167,7 @@ public static class PlayerAndVanDecorator
     }
 
     // Copies a (possibly non-readable) texture and turns the van body color white.
-    static Texture2D MakeWhiteBodyTexture(Texture source)
+    static Texture2D MakeWhiteBodyTexture(Texture source, Color32 fill)
     {
         RenderTexture rt = RenderTexture.GetTemporary(source.width, source.height, 0, RenderTextureFormat.ARGB32, RenderTextureReadWrite.sRGB);
         Graphics.Blit(source, rt);
@@ -124,7 +182,7 @@ public static class PlayerAndVanDecorator
         for (int i = 0; i < px.Length; i++)
         {
             if (Mathf.Abs(px[i].r - BodyColor.r) < 8 && Mathf.Abs(px[i].g - BodyColor.g) < 8 && Mathf.Abs(px[i].b - BodyColor.b) < 8)
-                px[i] = new Color32(255, 255, 255, 255);
+                px[i] = fill;
         }
         copy.SetPixels32(px);
         copy.filterMode = FilterMode.Point;
@@ -133,7 +191,7 @@ public static class PlayerAndVanDecorator
         return copy;
     }
 
-    static void PaintVan(DrivableVan van)
+    public static void PaintVan(DrivableVan van, Color bodyColor, Color textColor)
     {
         Renderer[] renderers = van.GetComponentsInChildren<Renderer>();
         if (renderers.Length == 0) return;
@@ -161,14 +219,14 @@ public static class PlayerAndVanDecorator
                 if (prop == null) continue;
                 Texture tex = mats[i].GetTexture(prop);
                 if (tex == null) continue;
-                if (whiteTex == null) whiteTex = MakeWhiteBodyTexture(tex);
+                MakeWhiteBodyTexture(tex, bodyColor);
                 mats[i].SetTexture(prop, whiteTex);
             }
             r.materials = mats;
         }
 
         Font font = Font.CreateDynamicFontFromOSFont("Arial", 64);
-        Color blue = new Color(0.05f, 0.2f, 0.85f);
+        Color blue = textColor;
 
         bool lengthIsZ = local.size.z >= local.size.x;
         float lengthWorld = lengthIsZ ? local.size.z * Mathf.Abs(t.lossyScale.z) : local.size.x * Mathf.Abs(t.lossyScale.x);
